@@ -13,9 +13,6 @@ public class User {
     @GeneratedValue(strategy = GenerationType.TABLE)
     @Column(name = "id")
     private Long id;
-    @NotNull
-    @Column(name = "username")
-    private String username;
 
     @NotNull
     @Column(name = "email", unique = true)
