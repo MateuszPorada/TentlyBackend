@@ -2,8 +2,7 @@ package app.tently.tentlyappbackend.controllers;
 
 import app.tently.tentlyappbackend.models.User;
 import app.tently.tentlyappbackend.modelsDTO.UserDTO;
-import app.tently.tentlyappbackend.repos.UserRepo;
-import org.modelmapper.ModelMapper;
+import app.tently.tentlyappbackend.services.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -15,19 +14,17 @@ import java.util.Optional;
 @RestController
 public class UserController {
 
-    private final UserRepo userRepo;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
-    private final ModelMapper modelMapper;
+    private final UserService userService;
 
-    public UserController(UserRepo userRepo, BCryptPasswordEncoder bCryptPasswordEncoder, ModelMapper modelMapper) {
-        this.userRepo = userRepo;
+    public UserController(BCryptPasswordEncoder bCryptPasswordEncoder, UserService userService) {
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
-        this.modelMapper = modelMapper;
+        this.userService = userService;
     }
 
     @GetMapping(value = "user/{id}")
     public ResponseEntity<Object> getUser(@PathVariable Long id) {
-        Optional<User> optionalUser = userRepo.findById(id);
+        Optional<User> optionalUser = userService.findUser(id);
         if (optionalUser.isPresent())
             return new ResponseEntity<>(optionalUser, HttpStatus.OK);
         else
@@ -36,7 +33,7 @@ public class UserController {
 
     @GetMapping(value = "user")
     public ResponseEntity<Object> getUserList() {
-        List<User> userList = userRepo.findAll();
+        List<User> userList = userService.findAllUsers();
         if (!userList.isEmpty())
             return new ResponseEntity<>(userList, HttpStatus.OK);
         else
@@ -45,12 +42,12 @@ public class UserController {
 
     @PostMapping(value = "user")
     public ResponseEntity<Object> addUser(@RequestBody UserDTO userDTO) {
-        User user = modelMapper.map(userDTO, User.class);
-        Optional<User> optionalUser = userRepo.findByEmail(userDTO.getEmail());
+        User user = userService.mapDTOToUser(userDTO);
+        Optional<User> optionalUser = userService.findUserByEmail(user.getEmail());
         if (optionalUser.isEmpty()) {
             String userPassword = bCryptPasswordEncoder.encode(user.getPassword());
             user.setPassword(userPassword);
-            userRepo.save(user);
+            userService.saveUser(user);
             return new ResponseEntity<>(user, HttpStatus.CREATED);
         } else
             return new ResponseEntity<>(HttpStatus.CONFLICT);
@@ -58,13 +55,13 @@ public class UserController {
 
     @PutMapping(value = "user/{id}")
     public ResponseEntity<Object> updateUser(@RequestBody UserDTO userDTO, @PathVariable Long id) {
-        User user = modelMapper.map(userDTO, User.class);
-        Optional<User> optionalUser = userRepo.findById(id);
+        User user = userService.mapDTOToUser(userDTO);
+        Optional<User> optionalUser = userService.findUser(id);
         if (optionalUser.isPresent()) {
             user.setId(id);
             String userPassword = bCryptPasswordEncoder.encode(user.getPassword());
             user.setPassword(userPassword);
-            userRepo.save(user);
+            userService.saveUser(user);
             return new ResponseEntity<>(user, HttpStatus.OK);
         } else if (user.getId() != null && !user.getId().equals(id)) {
             return new ResponseEntity<>(HttpStatus.CONFLICT);
@@ -74,14 +71,11 @@ public class UserController {
     }
 
     @DeleteMapping(value = "user/{id}")
-    public HttpStatus deleteUser(@RequestBody UserDTO userDTO, @PathVariable Long id) {
-        User user = modelMapper.map(userDTO, User.class);
-        Optional<User> optionalUser = userRepo.findById(id);
+    public HttpStatus deleteUser(@PathVariable Long id) {
+        Optional<User> optionalUser = userService.findUser(id);
         if (optionalUser.isPresent()) {
-            userRepo.deleteById(id);
+            userService.deleteUser(id);
             return HttpStatus.OK;
-        } else if (user.getId() != null && !user.getId().equals(id)) {
-            return HttpStatus.CONFLICT;
         } else {
             return HttpStatus.NOT_FOUND;
         }
