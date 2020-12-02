@@ -1,8 +1,10 @@
 package app.tently.tentlyappbackend.controllers;
 
 import app.tently.tentlyappbackend.models.Spot;
+import app.tently.tentlyappbackend.models.User;
 import app.tently.tentlyappbackend.modelsDTO.SpotDTO;
 import app.tently.tentlyappbackend.services.SpotService;
+import app.tently.tentlyappbackend.services.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,9 +16,11 @@ import java.util.Optional;
 public class SpotController {
 
     private final SpotService spotService;
+    private final UserService userService;
 
-    public SpotController(SpotService spotService) {
+    public SpotController(SpotService spotService, UserService userService) {
         this.spotService = spotService;
+        this.userService = userService;
     }
 
     @GetMapping(value = "spot/{id}")
@@ -40,8 +44,10 @@ public class SpotController {
     @PostMapping(value = "spot")
     public ResponseEntity<Object> addSpot(@RequestBody SpotDTO spotDTO) {
         Spot spot = spotService.mapDTOToSpot(spotDTO);
+        Optional<User> optionalUser = userService.findUser(spotDTO.getUser_id());
         Optional<Spot> optionalSpot = spotService.findSpotByName(spot.getName());
-        if (optionalSpot.isEmpty()) {
+        if (optionalSpot.isEmpty() && optionalUser.isPresent()) {
+            spot.setUser(optionalUser.get());
             spotService.saveSpot(spot);
             return new ResponseEntity<>(spot, HttpStatus.CREATED);
         } else

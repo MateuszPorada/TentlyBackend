@@ -22,10 +22,8 @@ public class Spot {
 
     private String description;
 
-    @Column(columnDefinition = "default 0")
     private int likeCount;
 
-    @Column(columnDefinition = "default 0")
     private int shareCount;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)

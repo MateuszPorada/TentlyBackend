@@ -1,5 +1,6 @@
 package app.tently.tentlyappbackend.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.NotNull;
 import lombok.Data;
 
@@ -19,6 +20,7 @@ public class User {
     @Column(name = "email", unique = true)
     private String email;
 
+    @JsonIgnore
     private String password;
 
     private String role;
