@@ -5,6 +5,7 @@ import com.sun.istack.NotNull;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @Entity
@@ -30,5 +31,8 @@ public class Spot {
     @JoinColumn(name = "user_id", nullable = false)
     @JsonIgnore
     private User user;
+
+    @OneToMany(mappedBy = "spot", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Like> likeList;
 
 }

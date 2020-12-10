@@ -43,4 +43,8 @@ public class SpotService {
     public void deleteSpot(Long id) {
         spotRepo.deleteById(id);
     }
+
+    public Optional<Spot> findSpotById(Long spot_id) {
+        return spotRepo.findById(spot_id);
+    }
 }
