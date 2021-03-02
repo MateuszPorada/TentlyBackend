@@ -42,7 +42,6 @@ public class LikeService {
         return likeRepo.findAllBySpot(spot);
     }
 
-
     public void deleteLike(Like like) {
         likeRepo.delete(like);
     }

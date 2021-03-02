@@ -36,6 +36,10 @@ public class UserService {
         return userRepo.findByEmail(email);
     }
 
+    public Optional<User> findUserByToken(String token) {
+        return userRepo.findByConfirmationToken(token);
+    }
+
     public void saveUser(User user) {
         userRepo.save(user);
     }
