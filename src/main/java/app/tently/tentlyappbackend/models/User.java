@@ -23,11 +23,20 @@ public class User {
     @JsonIgnore
     private String password;
 
-    private String role;
+    private String nickname;
+
+    private String country;
+
+    private String role = "USER";
+
+    private boolean enabled;
+
+    private String confirmationToken;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Spot> spots;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Like> likes;
+
 }

@@ -3,6 +3,7 @@ package app.tently.tentlyappbackend.models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.NotNull;
 import lombok.Data;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "spots")
+@DynamicUpdate
 public class Spot {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
@@ -19,13 +21,14 @@ public class Spot {
     @NotNull
     private String name;
 
-    private String imgUrl;
-
     private String description;
 
     private int likeCount;
 
     private int shareCount;
+
+    @ElementCollection
+    private List<String> imgUrls;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "user_id", nullable = false)
