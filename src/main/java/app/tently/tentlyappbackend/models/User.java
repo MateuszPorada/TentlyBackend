@@ -13,6 +13,7 @@ import java.util.List;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
+    @JsonIgnore
     @Column(name = "id")
     private Long id;
 
@@ -27,8 +28,10 @@ public class User {
 
     private String country;
 
+    @JsonIgnore
     private String role = "USER";
 
+    @JsonIgnore
     private boolean enabled;
 
     private String confirmationToken;
