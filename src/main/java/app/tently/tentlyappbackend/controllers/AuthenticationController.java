@@ -31,6 +31,7 @@ public class AuthenticationController {
 
     @PostMapping("/login")
     public ResponseEntity<Object> login(@RequestBody UserLoginDTO userLoginDTO) {
+        System.out.println("Test env");
         System.out.println(Arrays.toString(System.getenv("SIGNATURE_KEY").getBytes()));
         System.out.println(userLoginDTO);
         Optional<User> newUser = userRepo.findByEmail(userLoginDTO.getEmail());
