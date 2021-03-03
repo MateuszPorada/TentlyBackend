@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Optional;
 
@@ -30,6 +31,7 @@ public class AuthenticationController {
 
     @PostMapping("/login")
     public ResponseEntity<Object> login(@RequestBody UserLoginDTO userLoginDTO) {
+        System.out.println(Arrays.toString(System.getenv("SIGNATURE_KEY").getBytes()));
         System.out.println(userLoginDTO);
         Optional<User> newUser = userRepo.findByEmail(userLoginDTO.getEmail());
         if (newUser.isPresent()) {
