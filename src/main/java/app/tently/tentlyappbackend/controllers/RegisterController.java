@@ -11,10 +11,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.thymeleaf.TemplateEngine;
-import org.thymeleaf.context.Context;
 
 import javax.servlet.ServletContext;
-import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Optional;
 import java.util.UUID;
@@ -54,17 +52,17 @@ public class RegisterController {
             user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
             user.setConfirmationToken(UUID.randomUUID().toString());
             userService.saveUser(user);
-            servletContext.getServerInfo();
-            String appUrl = "http://" + InetAddress.getLocalHost().getHostAddress();
-            System.out.println(appUrl);
-            Context context = new Context();
-            context.setVariable("header", "TentlyApp");
-            context.setVariable("title", "Potwierdzenie adresu e-mail");
-            context.setVariable("description", "Aby aktywować konto i ustawić hasło kliknij link poniżej:");
-            context.setVariable("link", appUrl + ":4040/confirm?token=" + user.getConfirmationToken());
-            String body = templateEngine.process("template", context);
-            System.out.println(body);
-            emailSender.sendEmail(user.getEmail(), "Potwierdzenie rejestracji", body);
+//            servletContext.getServerInfo();
+//            String appUrl = "http://" + InetAddress.getLocalHost().getHostAddress();
+//            System.out.println(appUrl);
+//            Context context = new Context();
+//            context.setVariable("header", "TentlyApp");
+//            context.setVariable("title", "Potwierdzenie adresu e-mail");
+//            context.setVariable("description", "Aby aktywować konto i ustawić hasło kliknij link poniżej:");
+//            context.setVariable("link", appUrl + ":4040/confirm?token=" + user.getConfirmationToken());
+//            String body = templateEngine.process("template", context);
+//            System.out.println(body);
+//            emailSender.sendEmail(user.getEmail(), "Potwierdzenie rejestracji", body);
             return new ResponseEntity<>("Activation e-mail was sent to: " + user.getEmail(), HttpStatus.OK);
         }
 
