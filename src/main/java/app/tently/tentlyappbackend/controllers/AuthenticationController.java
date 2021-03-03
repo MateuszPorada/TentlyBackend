@@ -5,6 +5,7 @@ import app.tently.tentlyappbackend.repos.TokenRepo;
 import app.tently.tentlyappbackend.repos.UserRepo;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -18,6 +19,9 @@ import java.util.Optional;
 @RestController
 public class AuthenticationController {
 
+    @Value("${my.property}")
+    private String myProperty;
+
     private final UserRepo userRepo;
     private final TokenRepo tokenRepo;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
@@ -30,6 +34,7 @@ public class AuthenticationController {
 
     @PostMapping("/login")
     public ResponseEntity<Object> login(@RequestBody UserLoginDTO userLoginDTO) {
+        System.out.println(myProperty);
         System.out.println("123");
         System.out.println(System.getProperty("DB_URL"));
         System.out.println(System.getProperty("DB_USERNAME"));
