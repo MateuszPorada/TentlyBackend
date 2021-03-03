@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
 import java.util.Date;
 import java.util.Optional;
 
@@ -31,9 +30,6 @@ public class AuthenticationController {
 
     @PostMapping("/login")
     public ResponseEntity<Object> login(@RequestBody UserLoginDTO userLoginDTO) {
-        System.out.println("Test env");
-        System.out.println(Arrays.toString(System.getenv("SIGNATURE_KEY").getBytes()));
-        System.out.println(userLoginDTO);
         Optional<User> newUser = userRepo.findByEmail(userLoginDTO.getEmail());
         if (newUser.isPresent()) {
             if (bCryptPasswordEncoder.matches(userLoginDTO.getPassword(), newUser.get().getPassword())) {
@@ -45,7 +41,7 @@ public class AuthenticationController {
                         .claim("role", "ROLE_" + newUser.get().getRole())
                         .setIssuedAt(new Date(currentTime))
                         .setExpiration(new Date(currentTime + 2000000))
-                        .signWith(SignatureAlgorithm.HS256, System.getenv("SIGNATURE_KEY").getBytes())
+                        .signWith(SignatureAlgorithm.HS256, System.getProperty("SIGNATURE_KEY").getBytes())
                         .compact()));
             }
             {
