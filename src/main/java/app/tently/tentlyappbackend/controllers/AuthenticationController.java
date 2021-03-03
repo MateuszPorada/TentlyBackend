@@ -30,6 +30,8 @@ public class AuthenticationController {
 
     @PostMapping("/login")
     public ResponseEntity<Object> login(@RequestBody UserLoginDTO userLoginDTO) {
+        System.out.println("123");
+        System.out.println(System.getProperty("SIGNATURE_KEY"));
         Optional<User> newUser = userRepo.findByEmail(userLoginDTO.getEmail());
         if (newUser.isPresent()) {
             if (bCryptPasswordEncoder.matches(userLoginDTO.getPassword(), newUser.get().getPassword())) {
