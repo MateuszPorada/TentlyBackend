@@ -4,6 +4,7 @@ import app.tently.tentlyappbackend.services.TokenProvider;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -23,8 +24,9 @@ import java.util.Set;
 
 public class JwtFilter extends BasicAuthenticationFilter {
 
-
     public TokenProvider tokenProvider;
+    @Value("${SIGNATURE.KEY}")
+    private String sigKey;
 
     public JwtFilter(AuthenticationManager authenticationManager) {
         super(authenticationManager);
@@ -67,7 +69,7 @@ public class JwtFilter extends BasicAuthenticationFilter {
 
 
     private UsernamePasswordAuthenticationToken getAuthenticationByToken(String header) {
-        Jws<Claims> claimsJws = Jwts.parser().setSigningKey(System.getenv("SIGNATURE_KEY").getBytes())
+        Jws<Claims> claimsJws = Jwts.parser().setSigningKey(sigKey.getBytes())
                 .parseClaimsJws(header);
 
         String username = claimsJws.getBody().get("name").toString();

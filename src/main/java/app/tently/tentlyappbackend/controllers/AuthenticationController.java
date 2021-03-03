@@ -19,8 +19,8 @@ import java.util.Optional;
 @RestController
 public class AuthenticationController {
 
-    @Value("${my.property}")
-    private String myProperty;
+    @Value("${SIGNATURE.KEY}")
+    private String sigKey;
 
     private final UserRepo userRepo;
     private final TokenRepo tokenRepo;
@@ -34,12 +34,6 @@ public class AuthenticationController {
 
     @PostMapping("/login")
     public ResponseEntity<Object> login(@RequestBody UserLoginDTO userLoginDTO) {
-        System.out.println(myProperty);
-        System.out.println("123");
-        System.out.println(System.getProperty("DB_URL"));
-        System.out.println(System.getProperty("DB_USERNAME"));
-        System.out.println(System.getProperty("DB_PASSWORD"));
-        System.out.println(System.getProperty("SIGNATURE_KEY"));
         Optional<User> newUser = userRepo.findByEmail(userLoginDTO.getEmail());
         if (newUser.isPresent()) {
             if (bCryptPasswordEncoder.matches(userLoginDTO.getPassword(), newUser.get().getPassword())) {
@@ -51,7 +45,7 @@ public class AuthenticationController {
                         .claim("role", "ROLE_" + newUser.get().getRole())
                         .setIssuedAt(new Date(currentTime))
                         .setExpiration(new Date(currentTime + 2000000))
-                        .signWith(SignatureAlgorithm.HS256, System.getProperty("SIGNATURE_KEY").getBytes())
+                        .signWith(SignatureAlgorithm.HS256, sigKey.getBytes())
                         .compact()));
             }
             {
