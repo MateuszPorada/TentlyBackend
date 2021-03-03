@@ -12,7 +12,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class TentlyAppBackendApplication {
 
     public static void main(String[] args) {
-
         SpringApplication.run(TentlyAppBackendApplication.class, args);
     }
 
@@ -20,7 +19,5 @@ public class TentlyAppBackendApplication {
     public ModelMapper modelMapper() {
         return new ModelMapper();
     }
-
-
 
 }
