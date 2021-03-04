@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -22,24 +23,22 @@ public class ImageController {
     @PostMapping(value = "image")
     public ResponseEntity<Object> upload(@RequestParam("file") MultipartFile file) {
         try {
-            fileService.save(file);
-            return new ResponseEntity<>("File succesfully uploaded", HttpStatus.OK);
+            String string = fileService.save(file);
+            return new ResponseEntity<>(string, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>("Could not upload file", HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
-//    @PostMapping(value = "image")
-//    public ResponseEntity<Object> upload(@RequestParam("file") MultipartFile[] files) {
-//        try {
-//            for (MultipartFile file : files) {
-//                fileService.save(file);
-//            }
-//            return new ResponseEntity<>("Files succesfully uploaded", HttpStatus.OK);
-//        } catch (Exception e) {
-//            return new ResponseEntity<>("Could not upload file", HttpStatus.INTERNAL_SERVER_ERROR);
-//        }
-//    }
+    @PostMapping(value = "images")
+    public ResponseEntity<Object> upload(@RequestParam("file") MultipartFile[] files) {
+        try {
+            List<String> stringList = fileService.save(files);
+            return new ResponseEntity<>(stringList, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>("Could not upload files", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 
     @GetMapping("image/{id}")
     public ResponseEntity<byte[]> getFile(@PathVariable String id) {

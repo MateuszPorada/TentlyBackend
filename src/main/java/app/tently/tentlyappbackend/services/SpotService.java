@@ -16,12 +16,12 @@ public class SpotService {
 
     private final SpotRepo spotRepo;
     private final ModelMapper modelMapper;
-    private final UploadService uploadService;
+    private final FileService fileService;
 
-    public SpotService(SpotRepo spotRepo, ModelMapper modelMapper, UploadService uploadService) {
+    public SpotService(SpotRepo spotRepo, ModelMapper modelMapper, FileService fileService) {
         this.spotRepo = spotRepo;
         this.modelMapper = modelMapper;
-        this.uploadService = uploadService;
+        this.fileService = fileService;
     }
 
     public Optional<Spot> findSpot(Long id) {
@@ -41,7 +41,7 @@ public class SpotService {
     }
 
     public void saveSpot(Spot spot, MultipartFile[] files) throws IOException {
-        spot.setImgUrls(uploadService.upload(files));
+        spot.setImgUrls(fileService.save(files));
         spotRepo.save(spot);
     }
 
