@@ -28,13 +28,15 @@ public class User {
 
     private String country;
 
+    private String confirmationToken;
+
+    private String imageUrl = "https://iupac.org/wp-content/uploads/2018/05/default-avatar.png";
+
     @JsonIgnore
     private String role = "USER";
 
     @JsonIgnore
     private boolean enabled;
-
-    private String confirmationToken;
 
     @JsonIgnore
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
