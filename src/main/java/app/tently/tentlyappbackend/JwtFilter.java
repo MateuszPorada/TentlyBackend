@@ -43,39 +43,29 @@ public class JwtFilter extends BasicAuthenticationFilter {
 
         String header = request.getHeader("Authorization");
 
-
         if ("OPTIONS".equals(request.getMethod())) {
             response.setStatus(HttpServletResponse.SC_OK);
-
         } else {
             if (!header.startsWith("Bearer ")) {
                 throw new ServletException("Missing or invalid Authorization header");
             }
-
             String token = header.replace("Bearer ", "");
             if (tokenProvider.validateToken(token)) {
                 UsernamePasswordAuthenticationToken authResult = getAuthenticationByToken(token);
                 SecurityContextHolder.getContext().setAuthentication(authResult);
-
             } else {
                 throw new ServletException("Invalid token");
             }
-
         }
         chain.doFilter(request, response);
-
-
     }
-
 
     private UsernamePasswordAuthenticationToken getAuthenticationByToken(String header) {
         Jws<Claims> claimsJws = Jwts.parser().setSigningKey(sigKey.getBytes())
                 .parseClaimsJws(header);
-
         String username = claimsJws.getBody().get("name").toString();
         String role = claimsJws.getBody().get("role").toString();
         Set<SimpleGrantedAuthority> simpleGrantedAuthorities = Collections.singleton(new SimpleGrantedAuthority(role));
-
         return new UsernamePasswordAuthenticationToken(username, null, simpleGrantedAuthorities);
     }
 }

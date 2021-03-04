@@ -15,8 +15,6 @@ import java.util.Optional;
 
 @RestController
 public class LikeController {
-
-
     private final SpotService spotService;
     private final UserService userService;
     private final LikeService likeService;

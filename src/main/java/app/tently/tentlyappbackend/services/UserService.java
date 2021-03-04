@@ -5,6 +5,7 @@ import app.tently.tentlyappbackend.modelsDTO.UserDTO;
 import app.tently.tentlyappbackend.repos.UserRepo;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.util.List;
 import java.util.Optional;
@@ -41,6 +42,13 @@ public class UserService {
     }
 
     public void saveUser(User user) {
+        if (user.getImageUrl().equals("default")) {
+            String imageUrl = ServletUriComponentsBuilder.fromCurrentContextPath()
+                    .path("/file/")
+                    .path("2a78f32a-bdd8-4a2e-a3fb-bdf3c5debd55")
+                    .toUriString();
+            user.setImageUrl(imageUrl);
+        }
         userRepo.save(user);
     }
 

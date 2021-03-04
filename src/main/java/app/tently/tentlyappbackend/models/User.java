@@ -11,6 +11,7 @@ import java.util.List;
 @Entity
 @Table(name = "users")
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
     @JsonIgnore
@@ -30,7 +31,7 @@ public class User {
 
     private String confirmationToken;
 
-    private String imageUrl = "https://iupac.org/wp-content/uploads/2018/05/default-avatar.png";
+    private String imageUrl = "default";
 
     @JsonIgnore
     private String role = "USER";
