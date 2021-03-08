@@ -5,9 +5,7 @@ import app.tently.tentlyappbackend.modelsDTO.SpotDTO;
 import app.tently.tentlyappbackend.repos.SpotRepo;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
@@ -40,10 +38,10 @@ public class SpotService {
         return spotRepo.findByName(name);
     }
 
-    public void saveSpot(Spot spot, MultipartFile[] files) throws IOException {
-        spot.setImgUrls(fileService.save(files));
+    public void saveSpot(Spot spot) {
         spotRepo.save(spot);
     }
+
 
     public void deleteSpot(Long id) {
         spotRepo.deleteById(id);

@@ -8,9 +8,7 @@ import app.tently.tentlyappbackend.services.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
@@ -44,32 +42,31 @@ public class SpotController {
     }
 
     @PostMapping(value = "spot")
-    public ResponseEntity<Object> addSpot(@RequestPart("json") SpotDTO spotDTO, @RequestPart("file") MultipartFile[] files) throws IOException {
+    public ResponseEntity<Object> addSpot(@RequestPart("json") SpotDTO spotDTO) {
         Spot spot = spotService.mapDTOToSpot(spotDTO);
         Optional<User> optionalUser = userService.findUser(spotDTO.getUser_id());
         Optional<Spot> optionalSpot = spotService.findSpotByName(spot.getName());
         if (optionalSpot.isEmpty() && optionalUser.isPresent()) {
             spot.setUser(optionalUser.get());
-            spotService.saveSpot(spot, files);
+            spotService.saveSpot(spot);
             return new ResponseEntity<>(spot, HttpStatus.CREATED);
-        } else
+        } else {
             return new ResponseEntity<>(HttpStatus.CONFLICT);
+        }
     }
 
     @PutMapping(value = "spot/{id}")
-    public ResponseEntity<Object> updateSpot(@RequestPart("json") SpotDTO spotDTO, @RequestPart("file") MultipartFile[] files, @PathVariable Long id) throws IOException {
+    public ResponseEntity<Object> updateSpot(@RequestPart("json") SpotDTO spotDTO, @PathVariable Long id) {
         Spot spot = spotService.mapDTOToSpot(spotDTO);
         Optional<User> optionalUser = userService.findUser(spotDTO.getUser_id());
         Optional<Spot> optionalSpot = spotService.findSpot(id);
         if (optionalSpot.isPresent() && optionalUser.isPresent()) {
             spot.setUser(optionalUser.get());
             spot.setId(id);
-            spotService.saveSpot(spot, files);
+            spotService.saveSpot(spot);
             return new ResponseEntity<>(spot, HttpStatus.OK);
-        } else if (spot.getId() != null && !spot.getId().equals(id)) {
-            return new ResponseEntity<>(HttpStatus.CONFLICT);
         } else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.CONFLICT);
         }
     }
 
@@ -83,5 +80,4 @@ public class SpotController {
             return HttpStatus.NOT_FOUND;
         }
     }
-
 }

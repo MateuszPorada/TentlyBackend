@@ -1,6 +1,10 @@
 package app.tently.tentlyappbackend.controllers;
 
-import app.tently.tentlyappbackend.models.*;
+import app.tently.tentlyappbackend.models.ErrorMessage;
+import app.tently.tentlyappbackend.models.TokenModel;
+import app.tently.tentlyappbackend.models.User;
+import app.tently.tentlyappbackend.models.UserLoginResponse;
+import app.tently.tentlyappbackend.modelsDTO.UserLoginDTO;
 import app.tently.tentlyappbackend.repos.TokenRepo;
 import app.tently.tentlyappbackend.repos.UserRepo;
 import io.jsonwebtoken.Jwts;
@@ -19,12 +23,11 @@ import java.util.Optional;
 @RestController
 public class AuthenticationController {
 
-    @Value("${SIGNATURE.KEY}")
-    private String sigKey;
-
     private final UserRepo userRepo;
     private final TokenRepo tokenRepo;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
+    @Value("${SIGNATURE.KEY}")
+    private String sigKey;
 
     public AuthenticationController(UserRepo userRepo, TokenRepo tokenRepo, BCryptPasswordEncoder bCryptPasswordEncoder) {
         this.userRepo = userRepo;
@@ -38,7 +41,6 @@ public class AuthenticationController {
         if (newUser.isPresent()) {
             if (bCryptPasswordEncoder.matches(userLoginDTO.getPassword(), newUser.get().getPassword())) {
                 long currentTime = System.currentTimeMillis();
-
                 return ResponseEntity.status(HttpStatus.OK).body(new UserLoginResponse(newUser.get(), Jwts.builder()
                         .setHeaderParam("typ", "JWT")
                         .claim("name", newUser.get().getEmail())

@@ -1,4 +1,4 @@
-package app.tently.tentlyappbackend.models;
+package app.tently.tentlyappbackend.modelsDTO;
 
 import lombok.Data;
 
