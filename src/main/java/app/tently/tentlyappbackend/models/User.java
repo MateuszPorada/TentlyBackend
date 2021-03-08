@@ -29,6 +29,8 @@ public class User {
 
     private String country;
 
+    private String region;
+
     private String confirmationToken;
 
     private String imageUrl = "default";
@@ -39,10 +41,9 @@ public class User {
     @JsonIgnore
     private boolean enabled;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Spot> spots;
-    @JsonIgnore
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Like> likes;
 
