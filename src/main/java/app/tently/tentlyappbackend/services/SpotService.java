@@ -14,12 +14,11 @@ public class SpotService {
 
     private final SpotRepo spotRepo;
     private final ModelMapper modelMapper;
-    private final FileService fileService;
 
-    public SpotService(SpotRepo spotRepo, ModelMapper modelMapper, FileService fileService) {
+
+    public SpotService(SpotRepo spotRepo, ModelMapper modelMapper) {
         this.spotRepo = spotRepo;
         this.modelMapper = modelMapper;
-        this.fileService = fileService;
     }
 
     public Optional<Spot> findSpot(Long id) {

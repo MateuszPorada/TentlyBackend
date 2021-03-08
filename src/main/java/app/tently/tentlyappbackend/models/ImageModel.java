@@ -1,5 +1,6 @@
 package app.tently.tentlyappbackend.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -25,5 +26,6 @@ public class ImageModel {
     private int height;
 
     @Lob
+    @JsonIgnore
     private byte[] data;
 }
