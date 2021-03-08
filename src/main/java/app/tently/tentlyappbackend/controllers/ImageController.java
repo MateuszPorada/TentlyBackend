@@ -1,6 +1,6 @@
 package app.tently.tentlyappbackend.controllers;
 
-import app.tently.tentlyappbackend.models.FileModel;
+import app.tently.tentlyappbackend.models.ImageModel;
 import app.tently.tentlyappbackend.services.FileService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -33,12 +33,12 @@ public class ImageController {
 
     @GetMapping("image/{id}")
     public ResponseEntity<byte[]> getFile(@PathVariable String id) {
-        Optional<FileModel> fileEntityOptional = fileService.getFile(id);
+        Optional<ImageModel> fileEntityOptional = fileService.getFile(id);
         if (fileEntityOptional.isEmpty()) {
             return ResponseEntity.notFound()
                     .build();
         }
-        FileModel fileEntity = fileEntityOptional.get();
+        ImageModel fileEntity = fileEntityOptional.get();
         return ResponseEntity.ok()
                 .contentType(MediaType.valueOf(fileEntity.getContentType()))
                 .body(fileEntity.getData());

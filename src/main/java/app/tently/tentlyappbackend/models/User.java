@@ -27,9 +27,9 @@ public class User {
 
     private String nickname;
 
-    private String country;
+    private String country = null;
 
-    private String region;
+    private String region = null;
 
     private String confirmationToken;
 

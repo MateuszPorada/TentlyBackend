@@ -44,7 +44,7 @@ public class UserService {
     public void saveUser(User user) {
         if (user.getImageUrl().equals("default")) {
             String imageUrl = ServletUriComponentsBuilder.fromCurrentContextPath()
-                    .path("/file/")
+                    .path("/image/")
                     .path("2a78f32a-bdd8-4a2e-a3fb-bdf3c5debd55")
                     .toUriString();
             user.setImageUrl(imageUrl);
@@ -55,5 +55,4 @@ public class UserService {
     public void deleteUser(Long id) {
         userRepo.deleteById(id);
     }
-
 }

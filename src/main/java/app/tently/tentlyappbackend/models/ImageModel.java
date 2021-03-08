@@ -7,8 +7,8 @@ import javax.persistence.*;
 
 @Entity
 @Data
-@Table(name = "files")
-public class FileModel {
+@Table(name = "images")
+public class ImageModel {
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
@@ -19,6 +19,10 @@ public class FileModel {
     private String contentType;
 
     private Long size;
+
+    private int width;
+
+    private int height;
 
     @Lob
     private byte[] data;

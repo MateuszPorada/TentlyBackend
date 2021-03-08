@@ -1,13 +1,17 @@
 package app.tently.tentlyappbackend.services;
 
-import app.tently.tentlyappbackend.models.FileModel;
+import app.tently.tentlyappbackend.models.ImageModel;
 import app.tently.tentlyappbackend.repos.FileRepo;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -22,9 +26,6 @@ public class FileService {
         this.fileRepo = fileRepo;
     }
 
-    public String save(MultipartFile file) throws IOException {
-        return MapFileModel(file);
-    }
 
     public List<String> save(MultipartFile[] files) throws IOException {
         List<String> stringList = new ArrayList<>();
@@ -35,24 +36,31 @@ public class FileService {
     }
 
     private String MapFileModel(MultipartFile file) throws IOException {
-        FileModel fileModel = new FileModel();
-        fileModel.setName(StringUtils.cleanPath(Objects.requireNonNull(file.getOriginalFilename())));
-        fileModel.setContentType(file.getContentType());
-        fileModel.setData(file.getBytes());
-        fileModel.setSize(file.getSize());
-        fileRepo.save(fileModel);
+        ImageModel imageModel = new ImageModel();
+        InputStream in = new ByteArrayInputStream(file.getBytes());
+        BufferedImage originalImage = ImageIO.read(in);
+
+        imageModel.setName(StringUtils.cleanPath(Objects.requireNonNull(file.getOriginalFilename())));
+        imageModel.setContentType(file.getContentType());
+        imageModel.setData(file.getBytes());
+        imageModel.setWidth(originalImage.getWidth());
+        imageModel.setHeight(originalImage.getHeight());
+        System.out.println(originalImage.getType());
+        System.out.println(originalImage.getTransparency());
+        imageModel.setSize(file.getSize());
+        fileRepo.save(imageModel);
         return ServletUriComponentsBuilder.fromCurrentContextPath()
                 .path("/image/")
-                .path(fileModel.getId())
+                .path(imageModel.getId())
                 .toUriString();
     }
 
 
-    public Optional<FileModel> getFile(String id) {
+    public Optional<ImageModel> getFile(String id) {
         return fileRepo.findById(id);
     }
 
-    public List<FileModel> getAllFiles() {
+    public List<ImageModel> getAllFiles() {
         return fileRepo.findAll();
     }
 }
