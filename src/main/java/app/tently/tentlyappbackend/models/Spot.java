@@ -39,6 +39,7 @@ public class Spot {
     @JsonIgnore
     private User user;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "spot", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Like> likeList;
 
