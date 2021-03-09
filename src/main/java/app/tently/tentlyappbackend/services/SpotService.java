@@ -49,4 +49,8 @@ public class SpotService {
     public Optional<Spot> findSpotById(Long spot_id) {
         return spotRepo.findById(spot_id);
     }
+
+    public List<Spot> getPopularBYCountryAndRegion(String country, String region) {
+        return spotRepo.getAllByCountryAndRegion(country, region);
+    }
 }

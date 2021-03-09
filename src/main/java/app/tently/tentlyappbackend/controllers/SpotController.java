@@ -41,8 +41,17 @@ public class SpotController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
+    @GetMapping(value = "spot/popular/{country}/{region}")
+    public ResponseEntity<Object> getPopular(@PathVariable String country, @PathVariable String region) {
+        List<Spot> spotList = spotService.getPopularBYCountryAndRegion(country, region);
+        if (!spotList.isEmpty())
+            return new ResponseEntity<>(spotList, HttpStatus.OK);
+        else
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
     @PostMapping(value = "spot")
-    public ResponseEntity<Object> addSpot(@RequestPart("json") SpotDTO spotDTO) {
+    public ResponseEntity<Object> addSpot(@RequestBody SpotDTO spotDTO) {
         Spot spot = spotService.mapDTOToSpot(spotDTO);
         Optional<User> optionalUser = userService.findUser(spotDTO.getUser_id());
         Optional<Spot> optionalSpot = spotService.findSpotByName(spot.getName());
@@ -56,7 +65,7 @@ public class SpotController {
     }
 
     @PutMapping(value = "spot/{id}")
-    public ResponseEntity<Object> updateSpot(@RequestPart("json") SpotDTO spotDTO, @PathVariable Long id) {
+    public ResponseEntity<Object> updateSpot(@RequestBody SpotDTO spotDTO, @PathVariable Long id) {
         Spot spot = spotService.mapDTOToSpot(spotDTO);
         Optional<User> optionalUser = userService.findUser(spotDTO.getUser_id());
         Optional<Spot> optionalSpot = spotService.findSpot(id);

@@ -23,6 +23,10 @@ public class Spot {
 
     private String description;
 
+    private String country;
+
+    private String region;
+
     private int likeCount;
 
     private int shareCount;
