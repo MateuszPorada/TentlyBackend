@@ -13,6 +13,7 @@ public class ImageModel {
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @Column(name = "image_id")
     private String id;
 
     private String name;

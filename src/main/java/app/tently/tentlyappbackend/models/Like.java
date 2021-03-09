@@ -12,6 +12,7 @@ public class Like {
 
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
+    @Column(name = "like_id")
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)

@@ -15,7 +15,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
     @JsonIgnore
-    @Column(name = "id")
+    @Column(name = "user_id")
     private Long id;
 
     @NotNull

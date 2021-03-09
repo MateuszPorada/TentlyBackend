@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class TokenModel {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
-    @Column(name = "id")
+    @Column(name = "token_id")
     private Long id;
     @Column(name = "token")
     private String token;

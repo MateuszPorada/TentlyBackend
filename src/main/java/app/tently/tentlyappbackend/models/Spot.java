@@ -15,7 +15,7 @@ import java.util.List;
 public class Spot {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
-    @Column(name = "id")
+    @Column(name = "spot_id")
     private Long id;
 
     @NotNull
@@ -26,10 +26,6 @@ public class Spot {
     private String country;
 
     private String region;
-
-    private int likeCount;
-
-    private int shareCount;
 
     @ElementCollection
     private List<String> imgUrls;

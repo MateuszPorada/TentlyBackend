@@ -1,12 +1,18 @@
 package app.tently.tentlyappbackend.services;
 
 import app.tently.tentlyappbackend.models.User;
+import app.tently.tentlyappbackend.models.UserLoginResponse;
 import app.tently.tentlyappbackend.modelsDTO.UserDTO;
+import app.tently.tentlyappbackend.repos.LikeRepo;
 import app.tently.tentlyappbackend.repos.UserRepo;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -14,10 +20,14 @@ import java.util.Optional;
 public class UserService {
 
     private final UserRepo userRepo;
+    private final LikeRepo likeRepo;
     private final ModelMapper modelMapper;
+    @Value("${SIGNATURE.KEY}")
+    private String sigKey;
 
-    public UserService(UserRepo userRepo, ModelMapper modelMapper) {
+    public UserService(UserRepo userRepo, LikeRepo likeRepo, ModelMapper modelMapper) {
         this.userRepo = userRepo;
+        this.likeRepo = likeRepo;
         this.modelMapper = modelMapper;
     }
 
@@ -50,6 +60,19 @@ public class UserService {
             user.setImageUrl(imageUrl);
         }
         userRepo.save(user);
+    }
+
+    public UserLoginResponse mapTOUserResponse(User user) {
+        long currentTime = System.currentTimeMillis();
+        List<Object> likes = likeRepo.findLikeByUserID(user.getId());
+        return new UserLoginResponse(user, Jwts.builder()
+                .setHeaderParam("typ", "JWT")
+                .claim("name", user.getEmail())
+                .claim("role", "ROLE_" + user.getRole())
+                .setIssuedAt(new Date(currentTime))
+                .setExpiration(new Date(currentTime + 2000000))
+                .signWith(SignatureAlgorithm.HS256, sigKey.getBytes())
+                .compact(), likes);
     }
 
     public void deleteUser(Long id) {
