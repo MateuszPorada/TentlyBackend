@@ -4,6 +4,8 @@ import app.tently.tentlyappbackend.models.Spot;
 import app.tently.tentlyappbackend.modelsDTO.SpotDTO;
 import app.tently.tentlyappbackend.repos.SpotRepo;
 import org.modelmapper.ModelMapper;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -50,7 +52,8 @@ public class SpotService {
         return spotRepo.findById(spot_id);
     }
 
-    public List<Spot> getPopularBYCountryAndRegion(String country, String region) {
-        return spotRepo.getAllByCountryAndRegion(country, region);
+    public List<Spot> getPopularByCountryAndRegion(String country, String region, int size) {
+        Pageable top = PageRequest.of(0, size);
+        return spotRepo.getAllByCountryAndRegionOrderByLikeCountDesc(country, region, top);
     }
 }

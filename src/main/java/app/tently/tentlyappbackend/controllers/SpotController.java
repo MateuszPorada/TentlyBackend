@@ -41,9 +41,9 @@ public class SpotController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @GetMapping(value = "spot/popular/{country}/{region}")
-    public ResponseEntity<Object> getPopular(@PathVariable String country, @PathVariable String region) {
-        List<Spot> spotList = spotService.getPopularBYCountryAndRegion(country, region);
+    @GetMapping(value = "spot/popular/{country}/{region}/{size}")
+    public ResponseEntity<Object> getPopular(@PathVariable String country, @PathVariable String region, @PathVariable int size) {
+        List<Spot> spotList = spotService.getPopularByCountryAndRegion(country, region, size);
         if (!spotList.isEmpty())
             return new ResponseEntity<>(spotList, HttpStatus.OK);
         else
