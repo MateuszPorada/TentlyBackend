@@ -10,7 +10,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -57,7 +56,10 @@ public class SpotService {
 
     public List<SpotResponse> getPopularByCountryAndRegion(String country, String region, int size) {
         List<SpotResponse> spotResponseList = mapSpotsList(country, region, size);
-        spotResponseList.sort(Comparator.comparing(SpotResponse::getLikeCount).reversed());
+//        spotResponseList.sort((o1, o2) -> Math.max(o1.getLikeCount(), o2.getLikeCount()));
+//        System.out.println(spotResponseList);
+//        spotResponseList.sort(Comparator.comparing(SpotResponse::getLikeCount).reversed());
+
         return spotResponseList;
     }
 
@@ -67,7 +69,7 @@ public class SpotService {
 
     private List<SpotResponse> mapSpotsList(String country, String region, int size) {
         Pageable top = PageRequest.of(0, size);
-        List<Spot> spotList = spotRepo.getAllByCountryAndRegion(country, region, top);
+        List<Spot> spotList = spotRepo.getAllByCountryAndRegionOrderByLikeListAsc(country, region, top);
         List<SpotResponse> spotResponseList = new ArrayList<>();
         for (Spot spot : spotList) {
             spotResponseList.add(new SpotResponse(spot));

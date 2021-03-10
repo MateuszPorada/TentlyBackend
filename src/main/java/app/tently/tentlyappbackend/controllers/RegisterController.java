@@ -85,9 +85,7 @@ public class RegisterController {
 
     @PostMapping(value = "/confirm")
     public ResponseEntity<Object> setPasswordByConfirmationToken(@RequestParam String token, @RequestParam String password) {
-
         Optional<User> user = userService.findUserByToken(token);
-
         if (user.isPresent()) {
             user.get().setPassword(bCryptPasswordEncoder.encode(password));
             user.get().setEnabled(true);
@@ -96,7 +94,6 @@ public class RegisterController {
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-
     }
 
 //    @RequestMapping(value = "/confirm", method = RequestMethod.POST)

@@ -12,5 +12,5 @@ import java.util.Optional;
 public interface SpotRepo extends JpaRepository<Spot, Long> {
     Optional<Spot> findByName(String name);
 
-    List<Spot> getAllByCountryAndRegion(String country, String region, Pageable top);
+    List<Spot> getAllByCountryAndRegionOrderByLikeListAsc(String country, String region, Pageable top);
 }
