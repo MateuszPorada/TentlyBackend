@@ -5,8 +5,6 @@ import app.tently.tentlyappbackend.models.SpotResponse;
 import app.tently.tentlyappbackend.modelsDTO.SpotDTO;
 import app.tently.tentlyappbackend.repos.SpotRepo;
 import org.modelmapper.ModelMapper;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -55,21 +53,20 @@ public class SpotService {
     }
 
     public List<SpotResponse> getPopularByCountryAndRegion(String country, String region, int size) {
-        List<SpotResponse> spotResponseList = mapSpotsList(country, region, size);
-//        spotResponseList.sort((o1, o2) -> Math.max(o1.getLikeCount(), o2.getLikeCount()));
-//        System.out.println(spotResponseList);
-//        spotResponseList.sort(Comparator.comparing(SpotResponse::getLikeCount).reversed());
-
-        return spotResponseList;
+        List<Spot> spotList = spotRepo.getAllByCountryAndRegion(country, region);
+        spotList.sort((o1, o2) -> o2.getLikeList().size() - o1.getLikeList().size());
+        return mapSpotsList(spotList, size);
     }
 
     public List<SpotResponse> getByCountryAndRegion(String country, String region, int size) {
-        return mapSpotsList(country, region, size);
+        List<Spot> spotList = spotRepo.getAllByCountryAndRegion(country, region);
+        return mapSpotsList(spotList, size);
     }
 
-    private List<SpotResponse> mapSpotsList(String country, String region, int size) {
-        Pageable top = PageRequest.of(0, size);
-        List<Spot> spotList = spotRepo.getAllByCountryAndRegionOrderByLikeListAsc(country, region, top);
+    private List<SpotResponse> mapSpotsList(List<Spot> spotList, int size) {
+        if (size < spotList.size()) {
+            spotList.subList(size, spotList.size()).clear();
+        }
         List<SpotResponse> spotResponseList = new ArrayList<>();
         for (Spot spot : spotList) {
             spotResponseList.add(new SpotResponse(spot));

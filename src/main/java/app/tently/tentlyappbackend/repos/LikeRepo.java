@@ -16,6 +16,6 @@ public interface LikeRepo extends JpaRepository<Like, Long> {
 
     List<Like> findAllBySpot(Spot spot);
 
-    @Query(value = "SELECT spots.spot_id from spots inner join likes on spots.spot_id = likes.spot_id inner join users on users.user_id = likes.user_id where likes.user_id=:userID", nativeQuery = true)
+    @Query(value = "SELECT DISTINCT spots.spot_id from spots inner join likes on spots.spot_id = likes.spot_id inner join users on users.user_id = likes.user_id where likes.user_id=:userID", nativeQuery = true)
     List<Object> findLikeByUserID(Long userID);
 }
