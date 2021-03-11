@@ -1,0 +1,3604 @@
+[
+  {
+    "countryName": "Poland",
+    "countryShortCode": "PL",
+    "regions": [
+      {
+        "name": "Dolnośląskie",
+        "shortCode": "DS"
+      },
+      {
+        "name": "Kujawsko-pomorskie",
+        "shortCode": "KP"
+      },
+      {
+        "name": "Łódzkie",
+        "shortCode": "LD"
+      },
+      {
+        "name": "Lubelskie",
+        "shortCode": "LU"
+      },
+      {
+        "name": "Lubuskie",
+        "shortCode": "LB"
+      },
+      {
+        "name": "Małopolskie",
+        "shortCode": "MA"
+      },
+      {
+        "name": "Mazowieckie",
+        "shortCode": "MZ"
+      },
+      {
+        "name": "Opolskie",
+        "shortCode": "OP"
+      },
+      {
+        "name": "Podkarpackie",
+        "shortCode": "PK"
+      },
+      {
+        "name": "Podlaskie",
+        "shortCode": "PD"
+      },
+      {
+        "name": "Pomorskie",
+        "shortCode": "PM"
+      },
+      {
+        "name": "Śląskie",
+        "shortCode": "SL"
+      },
+      {
+        "name": "Świętokrzyskie",
+        "shortCode": "SK"
+      },
+      {
+        "name": "Warmińsko-mazurskie",
+        "shortCode": "WN"
+      },
+      {
+        "name": "Wielkopolskie",
+        "shortCode": "WP"
+      },
+      {
+        "name": "Zachodniopomorskie",
+        "shortCode": "ZP"
+      }
+    ]
+  },
+  {
+    "countryName": "Czech Republic",
+    "countryShortCode": "CZ",
+    "regions": [
+      {
+        "name": "Hlavní město Praha",
+        "shortCode": "PR"
+      },
+      {
+        "name": "Jihočeský kraj",
+        "shortCode": "JC"
+      },
+      {
+        "name": "Jihomoravský kraj",
+        "shortCode": "JM"
+      },
+      {
+        "name": "Karlovarský kraj",
+        "shortCode": "KA"
+      },
+      {
+        "name": "Královéhradecký kraj",
+        "shortCode": "KR"
+      },
+      {
+        "name": "Liberecký kraj",
+        "shortCode": "LI"
+      },
+      {
+        "name": "Moravskoslezský kraj",
+        "shortCode": "MO"
+      },
+      {
+        "name": "Olomoucký kraj",
+        "shortCode": "OL"
+      },
+      {
+        "name": "Pardubický kraj",
+        "shortCode": "PA"
+      },
+      {
+        "name": "Plzeňský kraj",
+        "shortCode": "PL"
+      },
+      {
+        "name": "Středočeský kraj",
+        "shortCode": "ST"
+      },
+      {
+        "name": "Ústecký kraj",
+        "shortCode": "US"
+      },
+      {
+        "name": "Vysočina",
+        "shortCode": "VY"
+      },
+      {
+        "name": "Zlínský kraj",
+        "shortCode": "ZL"
+      }
+    ]
+  },
+  {
+    "countryName": "Germany",
+    "countryShortCode": "DE",
+    "regions": [
+      {
+        "name": "Baden-Württemberg",
+        "shortCode": "BW"
+      },
+      {
+        "name": "Bayern",
+        "shortCode": "BY"
+      },
+      {
+        "name": "Berlin",
+        "shortCode": "BE"
+      },
+      {
+        "name": "Brandenburg",
+        "shortCode": "BB"
+      },
+      {
+        "name": "Bremen",
+        "shortCode": "HB"
+      },
+      {
+        "name": "Hamburg",
+        "shortCode": "HH"
+      },
+      {
+        "name": "Hessen",
+        "shortCode": "HE"
+      },
+      {
+        "name": "Mecklenburg-Vorpommern",
+        "shortCode": "MV"
+      },
+      {
+        "name": "Niedersachsen",
+        "shortCode": "NI"
+      },
+      {
+        "name": "Nordrhein-Westfalen",
+        "shortCode": "NW"
+      },
+      {
+        "name": "Rheinland-Pfalz",
+        "shortCode": "RP"
+      },
+      {
+        "name": "Saarland",
+        "shortCode": "SL"
+      },
+      {
+        "name": "Sachsen",
+        "shortCode": "SN"
+      },
+      {
+        "name": "Sachsen-Anhalt",
+        "shortCode": "ST"
+      },
+      {
+        "name": "Schleswig-Holstein",
+        "shortCode": "SH"
+      },
+      {
+        "name": "Thüringen",
+        "shortCode": "TH"
+      }
+    ]
+  },
+  {
+    "countryName": "Spain",
+    "countryShortCode": "ES",
+    "regions": [
+      {
+        "name": "Albacete",
+        "shortCode": "AB"
+      },
+      {
+        "name": "Alicante",
+        "shortCode": "A"
+      },
+      {
+        "name": "Almería",
+        "shortCode": "AN"
+      },
+      {
+        "name": "Araba/Álava",
+        "shortCode": "VI"
+      },
+      {
+        "name": "Asturias",
+        "shortCode": "O"
+      },
+      {
+        "name": "Ávila",
+        "shortCode": "AV"
+      },
+      {
+        "name": "Badajoz",
+        "shortCode": "BA"
+      },
+      {
+        "name": "Barcelona",
+        "shortCode": "B"
+      },
+      {
+        "name": "Bizkaia",
+        "shortCode": "BI"
+      },
+      {
+        "name": "Burgos",
+        "shortCode": "BU"
+      },
+      {
+        "name": "Cáceres",
+        "shortCode": "CC"
+      },
+      {
+        "name": "Cádiz",
+        "shortCode": "CA"
+      },
+      {
+        "name": "Cantabria",
+        "shortCode": "S"
+      },
+      {
+        "name": "Castellón/Castelló",
+        "shortCode": "CS"
+      },
+      {
+        "name": "Ceuta",
+        "shortCode": "CE"
+      },
+      {
+        "name": "Ciudad Real",
+        "shortCode": "CR"
+      },
+      {
+        "name": "Córdoba",
+        "shortCode": "CO"
+      },
+      {
+        "name": "A Coruña",
+        "shortCode": "C"
+      },
+      {
+        "name": "Cuenca",
+        "shortCode": "CU"
+      },
+      {
+        "name": "Gipuzkoa",
+        "shortCode": "SS"
+      },
+      {
+        "name": "Girona",
+        "shortCode": "GI"
+      },
+      {
+        "name": "Granada",
+        "shortCode": "GR"
+      },
+      {
+        "name": "Guadalajara",
+        "shortCode": "GU"
+      },
+      {
+        "name": "Huelva",
+        "shortCode": "H"
+      },
+      {
+        "name": "Huesca",
+        "shortCode": "HU"
+      },
+      {
+        "name": "Illes Balears",
+        "shortCode": "PM"
+      },
+      {
+        "name": "Jaén",
+        "shortCode": "J"
+      },
+      {
+        "name": "León",
+        "shortCode": "LE"
+      },
+      {
+        "name": "Lleida",
+        "shortCode": "L"
+      },
+      {
+        "name": "Lugo",
+        "shortCode": "LU"
+      },
+      {
+        "name": "Madrid",
+        "shortCode": "M"
+      },
+      {
+        "name": "Málaga",
+        "shortCode": "MA"
+      },
+      {
+        "name": "Melilla",
+        "shortCode": "ML"
+      },
+      {
+        "name": "Murcia",
+        "shortCode": "MU"
+      },
+      {
+        "name": "Navarra/Nafarroa",
+        "shortCode": "NA"
+      },
+      {
+        "name": "Ourense",
+        "shortCode": "OR"
+      },
+      {
+        "name": "Palencia",
+        "shortCode": "P"
+      },
+      {
+        "name": "Las Palmas",
+        "shortCode": "GC"
+      },
+      {
+        "name": "Pontevedra",
+        "shortCode": "PO"
+      },
+      {
+        "name": "La Rioja",
+        "shortCode": "LO"
+      },
+      {
+        "name": "Salamanca",
+        "shortCode": "SA"
+      },
+      {
+        "name": "Santa Cruz de Tenerife",
+        "shortCode": "TF"
+      },
+      {
+        "name": "Segovia",
+        "shortCode": "SG"
+      },
+      {
+        "name": "Sevilla",
+        "shortCode": "SE"
+      },
+      {
+        "name": "Soria",
+        "shortCode": "SO"
+      },
+      {
+        "name": "Tarragona",
+        "shortCode": "T"
+      },
+      {
+        "name": "Teruel",
+        "shortCode": "TE"
+      },
+      {
+        "name": "Toledo",
+        "shortCode": "TO"
+      },
+      {
+        "name": "Valencia/València",
+        "shortCode": "V"
+      },
+      {
+        "name": "Valladolid",
+        "shortCode": "VA"
+      },
+      {
+        "name": "Zamora",
+        "shortCode": "ZA"
+      },
+      {
+        "name": "Zaragoza",
+        "shortCode": "Z"
+      }
+    ]
+  },
+  {
+    "countryName": "Austria",
+    "countryShortCode": "AT",
+    "regions": [
+      {
+        "name": "Burgenland",
+        "shortCode": "1"
+      },
+      {
+        "name": "Kärnten",
+        "shortCode": "2"
+      },
+      {
+        "name": "Niederösterreich",
+        "shortCode": "3"
+      },
+      {
+        "name": "Oberösterreich",
+        "shortCode": "4"
+      },
+      {
+        "name": "Salzburg",
+        "shortCode": "5"
+      },
+      {
+        "name": "Steiermark",
+        "shortCode": "6"
+      },
+      {
+        "name": "Tirol",
+        "shortCode": "7"
+      },
+      {
+        "name": "Vorarlberg",
+        "shortCode": "8"
+      },
+      {
+        "name": "Wien",
+        "shortCode": "9"
+      }
+    ]
+  },
+  {
+    "countryName": "Belgium",
+    "countryShortCode": "BE",
+    "regions": [
+      {
+        "name": "Brussels",
+        "shortCode": "BRU"
+      },
+      {
+        "name": "Flanders",
+        "shortCode": "VLG"
+      },
+      {
+        "name": "Wallonia",
+        "shortCode": "WAL"
+      }
+    ]
+  },
+  {
+    "countryName": "Bulgaria",
+    "countryShortCode": "BG",
+    "regions": [
+      {
+        "name": "Blagoevgrad",
+        "shortCode": "01"
+      },
+      {
+        "name": "Burgas",
+        "shortCode": "02"
+      },
+      {
+        "name": "Dobrich",
+        "shortCode": "08"
+      },
+      {
+        "name": "Gabrovo",
+        "shortCode": "07"
+      },
+      {
+        "name": "Jambol",
+        "shortCode": "28"
+      },
+      {
+        "name": "Khaskovo",
+        "shortCode": "26"
+      },
+      {
+        "name": "Kjustendil",
+        "shortCode": "10"
+      },
+      {
+        "name": "Kurdzhali",
+        "shortCode": "09"
+      },
+      {
+        "name": "Lovech",
+        "shortCode": "11"
+      },
+      {
+        "name": "Montana",
+        "shortCode": "12"
+      },
+      {
+        "name": "Pazardzhik",
+        "shortCode": "13"
+      },
+      {
+        "name": "Pernik",
+        "shortCode": "14"
+      },
+      {
+        "name": "Pleven",
+        "shortCode": "15"
+      },
+      {
+        "name": "Plovdiv",
+        "shortCode": "16"
+      },
+      {
+        "name": "Razgrad",
+        "shortCode": "17"
+      },
+      {
+        "name": "Ruse",
+        "shortCode": "18"
+      },
+      {
+        "name": "Shumen",
+        "shortCode": "27"
+      },
+      {
+        "name": "Silistra",
+        "shortCode": "19"
+      },
+      {
+        "name": "Sliven",
+        "shortCode": "20"
+      },
+      {
+        "name": "Smoljan",
+        "shortCode": "21"
+      },
+      {
+        "name": "Sofija",
+        "shortCode": "23"
+      },
+      {
+        "name": "Sofija-Grad",
+        "shortCode": "22"
+      },
+      {
+        "name": "Stara Zagora",
+        "shortCode": "24"
+      },
+      {
+        "name": "Turgovishhe",
+        "shortCode": "25"
+      },
+      {
+        "name": "Varna",
+        "shortCode": "03"
+      },
+      {
+        "name": "Veliko Turnovo",
+        "shortCode": "04"
+      },
+      {
+        "name": "Vidin",
+        "shortCode": "05"
+      },
+      {
+        "name": "Vraca",
+        "shortCode": "06"
+      }
+    ]
+  },
+  {
+    "countryName": "Croatia",
+    "countryShortCode": "HR",
+    "regions": [
+      {
+        "name": "Bjelovarsko-bilogorska županija",
+        "shortCode": "07"
+      },
+      {
+        "name": "Brodsko-posavska županija",
+        "shortCode": "12"
+      },
+      {
+        "name": "Dubrovačko-neretvanska županija",
+        "shortCode": "19"
+      },
+      {
+        "name": "Grad Zagreb",
+        "shortCode": "21"
+      },
+      {
+        "name": "Istarska županija",
+        "shortCode": "18"
+      },
+      {
+        "name": "Karlovačka županija",
+        "shortCode": "04"
+      },
+      {
+        "name": "Koprivničko-križevačka županija",
+        "shortCode": "06"
+      },
+      {
+        "name": "Krapinsko-zagorska županija",
+        "shortCode": "02"
+      },
+      {
+        "name": "Ličko-senjska županija",
+        "shortCode": "09"
+      },
+      {
+        "name": "Međimurska županija",
+        "shortCode": "20"
+      },
+      {
+        "name": "Osječko-baranjska županija",
+        "shortCode": "14"
+      },
+      {
+        "name": "Požeško-slavonska županija",
+        "shortCode": "11"
+      },
+      {
+        "name": "Primorsko-goranska županija",
+        "shortCode": "08"
+      },
+      {
+        "name": "Sisačko-moslavačka županija",
+        "shortCode": "03"
+      },
+      {
+        "name": "Splitsko-dalmatinska županija",
+        "shortCode": "17"
+      },
+      {
+        "name": "Šibensko-kninska županija",
+        "shortCode": "15"
+      },
+      {
+        "name": "Varaždinska županija",
+        "shortCode": "05"
+      },
+      {
+        "name": "Virovitičko-podravska županija",
+        "shortCode": "10"
+      },
+      {
+        "name": "Vukovarsko-srijemska županija",
+        "shortCode": "16"
+      },
+      {
+        "name": "Zadarska županija",
+        "shortCode": "13"
+      },
+      {
+        "name": "Zagrebačka županija",
+        "shortCode": "01"
+      }
+    ]
+  },
+  {
+    "countryName": "Cyprus",
+    "countryShortCode": "CY",
+    "regions": [
+      {
+        "name": "Ammochostos",
+        "shortCode": "04"
+      },
+      {
+        "name": "Keryneia",
+        "shortCode": "06"
+      },
+      {
+        "name": "Larnaka",
+        "shortCode": "03"
+      },
+      {
+        "name": "Lefkosia",
+        "shortCode": "01"
+      },
+      {
+        "name": "Lemesos",
+        "shortCode": "02"
+      },
+      {
+        "name": "Pafos",
+        "shortCode": "05"
+      }
+    ]
+  },
+  {
+    "countryName": "Denmark",
+    "countryShortCode": "DK",
+    "regions": [
+      {
+        "name": "Hovedstaden",
+        "shortCode": "84"
+      },
+      {
+        "name": "Kujalleq",
+        "shortCode": "GL-KU"
+      },
+      {
+        "name": "Midtjylland",
+        "shortCode": "82"
+      },
+      {
+        "name": "Norderøerne",
+        "shortCode": "FO-01"
+      },
+      {
+        "name": "Nordjylland",
+        "shortCode": "81"
+      },
+      {
+        "name": "Østerø",
+        "shortCode": "FO-06"
+      },
+      {
+        "name": "Qaasuitsup",
+        "shortCode": "GL-QA"
+      },
+      {
+        "name": "Qeqqata",
+        "shortCode": "GL-QE"
+      },
+      {
+        "name": "Sandø",
+        "shortCode": "FO-02"
+      },
+      {
+        "name": "Sermersooq",
+        "shortCode": "GL-SM"
+      },
+      {
+        "name": "Sjælland",
+        "shortCode": "85"
+      },
+      {
+        "name": "Strømø",
+        "shortCode": "FO-03"
+      },
+      {
+        "name": "Suderø",
+        "shortCode": "FO-04"
+      },
+      {
+        "name": "Syddanmark",
+        "shortCode": "83"
+      },
+      {
+        "name": "Vågø",
+        "shortCode": "FO-05"
+      }
+    ]
+  },
+  {
+    "countryName": "Estonia",
+    "countryShortCode": "EE",
+    "regions": [
+      {
+        "name": "Harjumaa (Tallinn)",
+        "shortCode": "37"
+      },
+      {
+        "name": "Hiiumaa (Kardla)",
+        "shortCode": "39"
+      },
+      {
+        "name": "Ida-Virumaa (Johvi)",
+        "shortCode": "44"
+      },
+      {
+        "name": "Järvamaa (Paide)",
+        "shortCode": "41"
+      },
+      {
+        "name": "Jõgevamaa (Jogeva)",
+        "shortCode": "49"
+      },
+      {
+        "name": "Läänemaa",
+        "shortCode": "57"
+      },
+      {
+        "name": "Lääne-Virumaa (Rakvere)",
+        "shortCode": "59"
+      },
+      {
+        "name": "Pärnumaa (Parnu)",
+        "shortCode": "67"
+      },
+      {
+        "name": "Põlvamaa (Polva)",
+        "shortCode": "65"
+      },
+      {
+        "name": "Raplamaa (Rapla)",
+        "shortCode": "70"
+      },
+      {
+        "name": "Saaremaa (Kuessaare)",
+        "shortCode": "74"
+      },
+      {
+        "name": "Tartumaa (Tartu)",
+        "shortCode": "78"
+      },
+      {
+        "name": "Valgamaa (Valga)",
+        "shortCode": "82"
+      },
+      {
+        "name": "Viljandimaa (Viljandi)",
+        "shortCode": "84"
+      },
+      {
+        "name": "Võrumaa (Voru)",
+        "shortCode": "86"
+      }
+    ]
+  },
+  {
+    "countryName": "Finland",
+    "countryShortCode": "FI",
+    "regions": [
+      {
+        "name": "Ahvenanmaan maakunta",
+        "shortCode": "FI-01"
+      },
+      {
+        "name": "Etelä-Karjala",
+        "shortCode": "FI-02"
+      },
+      {
+        "name": "Etelä-Pohjanmaa",
+        "shortCode": "FI-03"
+      },
+      {
+        "name": "Etelä-Savo",
+        "shortCode": "FI-04"
+      },
+      {
+        "name": "Kainuu",
+        "shortCode": "FI-05"
+      },
+      {
+        "name": "Kanta-Häme",
+        "shortCode": "FI-06"
+      },
+      {
+        "name": "Keski-Pohjanmaa",
+        "shortCode": "FI-07"
+      },
+      {
+        "name": "Keski-Suomi",
+        "shortCode": "FI-08"
+      },
+      {
+        "name": "Kymenlaakso",
+        "shortCode": "FI-09"
+      },
+      {
+        "name": "Lappi",
+        "shortCode": "FI-10"
+      },
+      {
+        "name": "Pirkanmaa",
+        "shortCode": "FI-11"
+      },
+      {
+        "name": "Pohjanmaa",
+        "shortCode": "FI-12"
+      },
+      {
+        "name": "Pohjois-Karjala",
+        "shortCode": "FI-13"
+      },
+      {
+        "name": "Pohjois-Pohjanmaa",
+        "shortCode": "FI-14"
+      },
+      {
+        "name": "Pohjois-Savo",
+        "shortCode": "FI-15"
+      },
+      {
+        "name": "Päijät-Häme",
+        "shortCode": "FI-16"
+      },
+      {
+        "name": "Satakunta",
+        "shortCode": "FI-17"
+      },
+      {
+        "name": "Uusimaa",
+        "shortCode": "FI-18"
+      },
+      {
+        "name": "Varsinais-Suomi",
+        "shortCode": "FI-19"
+      }
+    ]
+  },
+  {
+    "countryName": "France",
+    "countryShortCode": "FR",
+    "regions": [
+      {
+        "name": "Auvergne-Rhône-Alpes",
+        "shortCode": "ARA"
+      },
+      {
+        "name": "Bourgogne-Franche-Comté",
+        "shortCode": "BFC"
+      },
+      {
+        "name": "Bretagne",
+        "shortCode": "BRE"
+      },
+      {
+        "name": "Centre-Val de Loire",
+        "shortCode": "CVL"
+      },
+      {
+        "name": "Corse",
+        "shortCode": "COR"
+      },
+      {
+        "name": "Grand Est",
+        "shortCode": "GES"
+      },
+      {
+        "name": "Hauts-de-France",
+        "shortCode": "HDF"
+      },
+      {
+        "name": "Île-de-France",
+        "shortCode": "IDF"
+      },
+      {
+        "name": "Normandie",
+        "shortCode": "NOR"
+      },
+      {
+        "name": "Nouvelle-Aquitaine",
+        "shortCode": "NAQ"
+      },
+      {
+        "name": "Occitanie",
+        "shortCode": "OCC"
+      },
+      {
+        "name": "Pays de la Loire",
+        "shortCode": "PDL"
+      },
+      {
+        "name": "Provence-Alpes-Cote d'Azur",
+        "shortCode": "PAC"
+      },
+      {
+        "name": "Clipperton",
+        "shortCode": "CP"
+      },
+      {
+        "name": "Guadeloupe",
+        "shortCode": "GP"
+      },
+      {
+        "name": "Guyane",
+        "shortCode": "GF"
+      },
+      {
+        "name": "Martinique",
+        "shortCode": "MQ"
+      },
+      {
+        "name": "Mayotte",
+        "shortCode": "YT"
+      },
+      {
+        "name": "Novelle-Calédonie",
+        "shortCode": "NC"
+      },
+      {
+        "name": "Polynésie",
+        "shortCode": "PF"
+      },
+      {
+        "name": "Saint-Pierre-et-Miquelon",
+        "shortCode": "PM"
+      },
+      {
+        "name": "Saint Barthélemy",
+        "shortCode": "BL"
+      },
+      {
+        "name": "Saint Martin",
+        "shortCode": "MF"
+      },
+      {
+        "name": "Réunion",
+        "shortCode": "RE"
+      },
+      {
+        "name": "Terres Australes Françaises",
+        "shortCode": "TF"
+      },
+      {
+        "name": "Wallis-et-Futuna",
+        "shortCode": "WF"
+      }
+    ]
+  },
+  {
+    "countryName": "Greece",
+    "countryShortCode": "GR",
+    "regions": [
+      {
+        "name": "Anatolikí Makedonía kai Thráki",
+        "shortCode": "A"
+      },
+      {
+        "name": "Attikḯ",
+        "shortCode": "I"
+      },
+      {
+        "name": "Dytikí Elláda",
+        "shortCode": "G"
+      },
+      {
+        "name": "Dytikí Makedonía",
+        "shortCode": "C"
+      },
+      {
+        "name": "Ionía Nísia",
+        "shortCode": "F"
+      },
+      {
+        "name": "Kentrikí Makedonía",
+        "shortCode": "B"
+      },
+      {
+        "name": "Krítí",
+        "shortCode": "M"
+      },
+      {
+        "name": "Notío Aigaío",
+        "shortCode": "L"
+      },
+      {
+        "name": "Peloponnísos",
+        "shortCode": "J"
+      },
+      {
+        "name": "Stereá Elláda",
+        "shortCode": "H"
+      },
+      {
+        "name": "Thessalía",
+        "shortCode": "E"
+      },
+      {
+        "name": "Voreío Aigaío",
+        "shortCode": "K"
+      },
+      {
+        "name": "Ípeiros",
+        "shortCode": "D"
+      },
+      {
+        "name": "Ágion Óros",
+        "shortCode": "69"
+      }
+    ]
+  },
+  {
+    "countryName": "Hungary",
+    "countryShortCode": "HU",
+    "regions": [
+      {
+        "name": "Bács-Kiskun",
+        "shortCode": "BK"
+      },
+      {
+        "name": "Baranya",
+        "shortCode": "BA"
+      },
+      {
+        "name": "Békés",
+        "shortCode": "BE"
+      },
+      {
+        "name": "Békéscsaba",
+        "shortCode": "BC"
+      },
+      {
+        "name": "Borsod-Abauj-Zemplen",
+        "shortCode": "BZ"
+      },
+      {
+        "name": "Budapest",
+        "shortCode": "BU"
+      },
+      {
+        "name": "Csongrád",
+        "shortCode": "CS"
+      },
+      {
+        "name": "Debrecen",
+        "shortCode": "DE"
+      },
+      {
+        "name": "Dunaújváros",
+        "shortCode": "DU"
+      },
+      {
+        "name": "Eger",
+        "shortCode": "EG"
+      },
+      {
+        "name": "Érd",
+        "shortCode": "ER"
+      },
+      {
+        "name": "Fejér",
+        "shortCode": "FE"
+      },
+      {
+        "name": "Győr",
+        "shortCode": "GY"
+      },
+      {
+        "name": "Győr-Moson-Sopron",
+        "shortCode": "GS"
+      },
+      {
+        "name": "Hajdú-Bihar",
+        "shortCode": "HB"
+      },
+      {
+        "name": "Heves",
+        "shortCode": "HE"
+      },
+      {
+        "name": "Hódmezővásárhely",
+        "shortCode": "HV"
+      },
+      {
+        "name": "Jász-Nagykun-Szolnok",
+        "shortCode": "N"
+      },
+      {
+        "name": "Kaposvár",
+        "shortCode": "KV"
+      },
+      {
+        "name": "Kecskemét",
+        "shortCode": "KM"
+      },
+      {
+        "name": "Komárom-Esztergom",
+        "shortCode": "KE"
+      },
+      {
+        "name": "Miskolc",
+        "shortCode": "MI"
+      },
+      {
+        "name": "Nagykanizsa",
+        "shortCode": "NK"
+      },
+      {
+        "name": "Nógrád",
+        "shortCode": "NO"
+      },
+      {
+        "name": "Nyíregyháza",
+        "shortCode": "NY"
+      },
+      {
+        "name": "Pécs",
+        "shortCode": "PS"
+      },
+      {
+        "name": "Pest",
+        "shortCode": "PE"
+      },
+      {
+        "name": "Salgótarján",
+        "shortCode": "ST"
+      },
+      {
+        "name": "Somogy",
+        "shortCode": "SO"
+      },
+      {
+        "name": "Sopron",
+        "shortCode": "SN"
+      },
+      {
+        "name": "Szabolcs-á-Bereg",
+        "shortCode": "SZ"
+      },
+      {
+        "name": "Szeged",
+        "shortCode": "SD"
+      },
+      {
+        "name": "Székesfehérvár",
+        "shortCode": "SF"
+      },
+      {
+        "name": "Szekszárd",
+        "shortCode": "SS"
+      },
+      {
+        "name": "Szolnok",
+        "shortCode": "SK"
+      },
+      {
+        "name": "Szombathely",
+        "shortCode": "SH"
+      },
+      {
+        "name": "Tatabánya",
+        "shortCode": "TB"
+      },
+      {
+        "name": "Tolna",
+        "shortCode": "TO"
+      },
+      {
+        "name": "Vas",
+        "shortCode": "VA"
+      },
+      {
+        "name": "Veszprém",
+        "shortCode": "VE"
+      },
+      {
+        "name": "Veszprém (City)",
+        "shortCode": "VM"
+      },
+      {
+        "name": "Zala",
+        "shortCode": "ZA"
+      },
+      {
+        "name": "Zalaegerszeg",
+        "shortCode": "ZE"
+      }
+    ]
+  },
+  {
+    "countryName": "Ireland",
+    "countryShortCode": "IE",
+    "regions": [
+      {
+        "name": "Carlow",
+        "shortCode": "CW"
+      },
+      {
+        "name": "Cavan",
+        "shortCode": "CN"
+      },
+      {
+        "name": "Clare",
+        "shortCode": "CE"
+      },
+      {
+        "name": "Cork",
+        "shortCode": "CO"
+      },
+      {
+        "name": "Donegal",
+        "shortCode": "DL"
+      },
+      {
+        "name": "Dublin",
+        "shortCode": "D"
+      },
+      {
+        "name": "Galway",
+        "shortCode": "G"
+      },
+      {
+        "name": "Kerry",
+        "shortCode": "KY"
+      },
+      {
+        "name": "Kildare",
+        "shortCode": "KE"
+      },
+      {
+        "name": "Kilkenny",
+        "shortCode": "KK"
+      },
+      {
+        "name": "Laois",
+        "shortCode": "LS"
+      },
+      {
+        "name": "Leitrim",
+        "shortCode": "LM"
+      },
+      {
+        "name": "Limerick",
+        "shortCode": "LK"
+      },
+      {
+        "name": "Longford",
+        "shortCode": "LD"
+      },
+      {
+        "name": "Louth",
+        "shortCode": "LH"
+      },
+      {
+        "name": "Mayo",
+        "shortCode": "MO"
+      },
+      {
+        "name": "Meath",
+        "shortCode": "MH"
+      },
+      {
+        "name": "Monaghan",
+        "shortCode": "MN"
+      },
+      {
+        "name": "Offaly",
+        "shortCode": "OY"
+      },
+      {
+        "name": "Roscommon",
+        "shortCode": "RN"
+      },
+      {
+        "name": "Sligo",
+        "shortCode": "SO"
+      },
+      {
+        "name": "Tipperary",
+        "shortCode": "TA"
+      },
+      {
+        "name": "Waterford",
+        "shortCode": "WD"
+      },
+      {
+        "name": "Westmeath",
+        "shortCode": "WH"
+      },
+      {
+        "name": "Wexford",
+        "shortCode": "WX"
+      },
+      {
+        "name": "Wicklow",
+        "shortCode": "WW"
+      }
+    ]
+  },
+  {
+    "countryName": "Italy",
+    "countryShortCode": "IT",
+    "regions": [
+      {
+        "name": "Abruzzo",
+        "shortCode": "65"
+      },
+      {
+        "name": "Basilicata",
+        "shortCode": "77"
+      },
+      {
+        "name": "Calabria",
+        "shortCode": "78"
+      },
+      {
+        "name": "Campania",
+        "shortCode": "72"
+      },
+      {
+        "name": "Emilia-Romagna",
+        "shortCode": "45"
+      },
+      {
+        "name": "Friuli-Venezia Giulia",
+        "shortCode": "36"
+      },
+      {
+        "name": "Lazio",
+        "shortCode": "62"
+      },
+      {
+        "name": "Liguria",
+        "shortCode": "42"
+      },
+      {
+        "name": "Lombardia",
+        "shortCode": "25"
+      },
+      {
+        "name": "Marche",
+        "shortCode": "57"
+      },
+      {
+        "name": "Molise",
+        "shortCode": "67"
+      },
+      {
+        "name": "Piemonte",
+        "shortCode": "21"
+      },
+      {
+        "name": "Puglia",
+        "shortCode": "75"
+      },
+      {
+        "name": "Sardegna",
+        "shortCode": "88"
+      },
+      {
+        "name": "Sicilia",
+        "shortCode": "82"
+      },
+      {
+        "name": "Toscana",
+        "shortCode": "52"
+      },
+      {
+        "name": "Trentino-Alto Adige",
+        "shortCode": "32"
+      },
+      {
+        "name": "Umbria",
+        "shortCode": "55"
+      },
+      {
+        "name": "Valle d'Aosta",
+        "shortCode": "23"
+      },
+      {
+        "name": "Veneto",
+        "shortCode": "34"
+      }
+    ]
+  },
+  {
+    "countryName": "Latvia",
+    "countryShortCode": "LV",
+    "regions": [
+      {
+        "name": "Aglona",
+        "shortCode": "001"
+      },
+      {
+        "name": "Aizkraukle",
+        "shortCode": "002"
+      },
+      {
+        "name": "Aizpute",
+        "shortCode": "003"
+      },
+      {
+        "name": "Aknīste",
+        "shortCode": "004"
+      },
+      {
+        "name": "Aloja",
+        "shortCode": "005"
+      },
+      {
+        "name": "Alsunga",
+        "shortCode": "06"
+      },
+      {
+        "name": "Alūksne",
+        "shortCode": "007"
+      },
+      {
+        "name": "Amata",
+        "shortCode": "008"
+      },
+      {
+        "name": "Ape",
+        "shortCode": "009"
+      },
+      {
+        "name": "Auce",
+        "shortCode": "010"
+      },
+      {
+        "name": "Ādaži",
+        "shortCode": "011"
+      },
+      {
+        "name": "Babīte",
+        "shortCode": "012"
+      },
+      {
+        "name": "Baldone",
+        "shortCode": "013"
+      },
+      {
+        "name": "Baltinava",
+        "shortCode": "014"
+      },
+      {
+        "name": "Balvi",
+        "shortCode": "015"
+      },
+      {
+        "name": "Bauska",
+        "shortCode": "016"
+      },
+      {
+        "name": "Beverīna",
+        "shortCode": "017"
+      },
+      {
+        "name": "Brocēni",
+        "shortCode": "018"
+      },
+      {
+        "name": "Burtnieki",
+        "shortCode": "019"
+      },
+      {
+        "name": "Carnikava",
+        "shortCode": "020"
+      },
+      {
+        "name": "Cesvaine",
+        "shortCode": "021"
+      },
+      {
+        "name": "Cēsis",
+        "shortCode": "022"
+      },
+      {
+        "name": "Cibla",
+        "shortCode": "023"
+      },
+      {
+        "name": "Dagda",
+        "shortCode": "024"
+      },
+      {
+        "name": "Daugavpils",
+        "shortCode": "025"
+      },
+      {
+        "name": "Daugavpils (City)",
+        "shortCode": "DGV"
+      },
+      {
+        "name": "Dobele",
+        "shortCode": "026"
+      },
+      {
+        "name": "Dundaga",
+        "shortCode": "027"
+      },
+      {
+        "name": "Durbe",
+        "shortCode": "028"
+      },
+      {
+        "name": "Engure",
+        "shortCode": "029"
+      },
+      {
+        "name": "Ērgļi",
+        "shortCode": "030"
+      },
+      {
+        "name": "Garkalne",
+        "shortCode": "031"
+      },
+      {
+        "name": "Grobiņa",
+        "shortCode": "032"
+      },
+      {
+        "name": "Gulbene",
+        "shortCode": "033"
+      },
+      {
+        "name": "Iecava",
+        "shortCode": "034"
+      },
+      {
+        "name": "Ikšķile",
+        "shortCode": "035"
+      },
+      {
+        "name": "Ilūkste",
+        "shortCode": "036"
+      },
+      {
+        "name": "Inčukalns",
+        "shortCode": "037"
+      },
+      {
+        "name": "Jaunjelgava",
+        "shortCode": "038"
+      },
+      {
+        "name": "Jaunpiebalga",
+        "shortCode": "039"
+      },
+      {
+        "name": "Jaunpils",
+        "shortCode": "040"
+      },
+      {
+        "name": "Jelgava",
+        "shortCode": "041"
+      },
+      {
+        "name": "Jelgava (City)",
+        "shortCode": "JEL"
+      },
+      {
+        "name": "Jēkabpils",
+        "shortCode": "042"
+      },
+      {
+        "name": "Jēkabpils (City)",
+        "shortCode": "JKB"
+      },
+      {
+        "name": "Jūrmala (City)",
+        "shortCode": "JUR"
+      },
+      {
+        "name": "Kandava",
+        "shortCode": "043"
+      },
+      {
+        "name": "Kārsava",
+        "shortCode": "044"
+      },
+      {
+        "name": "Kocēni",
+        "shortCode": "045"
+      },
+      {
+        "name": "Koknese",
+        "shortCode": "046"
+      },
+      {
+        "name": "Krāslava",
+        "shortCode": "047"
+      },
+      {
+        "name": "Krimulda",
+        "shortCode": "048"
+      },
+      {
+        "name": "Krustpils",
+        "shortCode": "049"
+      },
+      {
+        "name": "Kuldīga",
+        "shortCode": "050"
+      },
+      {
+        "name": "Ķegums",
+        "shortCode": "051"
+      },
+      {
+        "name": "Ķekava",
+        "shortCode": "052"
+      },
+      {
+        "name": "Lielvārde",
+        "shortCode": "053"
+      },
+      {
+        "name": "Liepāja",
+        "shortCode": "LPX"
+      },
+      {
+        "name": "Limbaži",
+        "shortCode": "054"
+      },
+      {
+        "name": "Līgatne",
+        "shortCode": "055"
+      },
+      {
+        "name": "Līvāni",
+        "shortCode": "056"
+      },
+      {
+        "name": "Lubāna",
+        "shortCode": "057"
+      },
+      {
+        "name": "Ludza",
+        "shortCode": "058"
+      },
+      {
+        "name": "Madona",
+        "shortCode": "059"
+      },
+      {
+        "name": "Mazsalaca",
+        "shortCode": "060"
+      },
+      {
+        "name": "Mālpils",
+        "shortCode": "061"
+      },
+      {
+        "name": "Mārupe",
+        "shortCode": "062"
+      },
+      {
+        "name": "Mērsrags",
+        "shortCode": "063"
+      },
+      {
+        "name": "Naukšēni",
+        "shortCode": "064"
+      },
+      {
+        "name": "Nereta",
+        "shortCode": "065"
+      },
+      {
+        "name": "Nīca",
+        "shortCode": "066"
+      },
+      {
+        "name": "Ogre",
+        "shortCode": "067"
+      },
+      {
+        "name": "Olaine",
+        "shortCode": "068"
+      },
+      {
+        "name": "Ozolnieki",
+        "shortCode": "069"
+      },
+      {
+        "name": "Pārgauja",
+        "shortCode": "070"
+      },
+      {
+        "name": "Pāvilosta",
+        "shortCode": "071"
+      },
+      {
+        "name": "Pļaviņas",
+        "shortCode": "072"
+      },
+      {
+        "name": "Preiļi",
+        "shortCode": "073"
+      },
+      {
+        "name": "Priekule",
+        "shortCode": "074"
+      },
+      {
+        "name": "Priekuļi",
+        "shortCode": "075"
+      },
+      {
+        "name": "Rauna",
+        "shortCode": "076"
+      },
+      {
+        "name": "Rēzekne",
+        "shortCode": "077"
+      },
+      {
+        "name": "Rēzekne (City)",
+        "shortCode": "REZ"
+      },
+      {
+        "name": "Riebiņi",
+        "shortCode": "078"
+      },
+      {
+        "name": "Rīga",
+        "shortCode": "RIX"
+      },
+      {
+        "name": "Roja",
+        "shortCode": "079"
+      },
+      {
+        "name": "Ropaži",
+        "shortCode": "080"
+      },
+      {
+        "name": "Rucava",
+        "shortCode": "081"
+      },
+      {
+        "name": "Rugāji",
+        "shortCode": "082"
+      },
+      {
+        "name": "Rundāle",
+        "shortCode": "083"
+      },
+      {
+        "name": "Rūjiena",
+        "shortCode": "084"
+      },
+      {
+        "name": "Sala",
+        "shortCode": "085"
+      },
+      {
+        "name": "Salacgrīva",
+        "shortCode": "086"
+      },
+      {
+        "name": "Salaspils",
+        "shortCode": "087"
+      },
+      {
+        "name": "Saldus",
+        "shortCode": "088"
+      },
+      {
+        "name": "Saulkrasti",
+        "shortCode": "089"
+      },
+      {
+        "name": "Sēja",
+        "shortCode": "090"
+      },
+      {
+        "name": "Sigulda",
+        "shortCode": "091"
+      },
+      {
+        "name": "Skrīveri",
+        "shortCode": "092"
+      },
+      {
+        "name": "Skrunda",
+        "shortCode": "093"
+      },
+      {
+        "name": "Smiltene",
+        "shortCode": "094"
+      },
+      {
+        "name": "Stopiņi",
+        "shortCode": "095"
+      },
+      {
+        "name": "Strenči",
+        "shortCode": "096"
+      },
+      {
+        "name": "Talsi",
+        "shortCode": "097"
+      },
+      {
+        "name": "Tērvete",
+        "shortCode": "098"
+      },
+      {
+        "name": "Tukums",
+        "shortCode": "099"
+      },
+      {
+        "name": "Vaiņode",
+        "shortCode": "100"
+      },
+      {
+        "name": "Valka",
+        "shortCode": "101"
+      },
+      {
+        "name": "Valmiera",
+        "shortCode": "VMR"
+      },
+      {
+        "name": "Varakļāni",
+        "shortCode": "102"
+      },
+      {
+        "name": "Vārkava",
+        "shortCode": "103"
+      },
+      {
+        "name": "Vecpiebalga",
+        "shortCode": "104"
+      },
+      {
+        "name": "Vecumnieki",
+        "shortCode": "105"
+      },
+      {
+        "name": "Ventspils",
+        "shortCode": "106"
+      },
+      {
+        "name": "Ventspils (City)",
+        "shortCode": "VEN"
+      },
+      {
+        "name": "Viesīte",
+        "shortCode": "107"
+      },
+      {
+        "name": "Viļaka",
+        "shortCode": "108"
+      },
+      {
+        "name": "Viļāni",
+        "shortCode": "109"
+      },
+      {
+        "name": "Zilupe",
+        "shortCode": "110"
+      }
+    ]
+  },
+  {
+    "countryName": "Lithuania",
+    "countryShortCode": "LT",
+    "regions": [
+      {
+        "name": "Alytaus",
+        "shortCode": "AL"
+      },
+      {
+        "name": "Kauno",
+        "shortCode": "KU"
+      },
+      {
+        "name": "Klaipėdos",
+        "shortCode": "KL"
+      },
+      {
+        "name": "Marijampolės",
+        "shortCode": "MR"
+      },
+      {
+        "name": "Panevėžio",
+        "shortCode": "PN"
+      },
+      {
+        "name": "Šiaulių",
+        "shortCode": "SA"
+      },
+      {
+        "name": "Tauragės",
+        "shortCode": "TA"
+      },
+      {
+        "name": "Telšių",
+        "shortCode": "TE"
+      },
+      {
+        "name": "Utenos",
+        "shortCode": "UT"
+      },
+      {
+        "name": "Vilniaus",
+        "shortCode": "VL"
+      }
+    ]
+  },
+  {
+    "countryName": "Luxembourg",
+    "countryShortCode": "LU",
+    "regions": [
+      {
+        "name": "Capellen",
+        "shortCode": "CA"
+      },
+      {
+        "name": "Clevaux",
+        "shortCode": "CL"
+      },
+      {
+        "name": "Diekirch",
+        "shortCode": "DI"
+      },
+      {
+        "name": "Echternach",
+        "shortCode": "EC"
+      },
+      {
+        "name": "Esch-sur-Alzette",
+        "shortCode": "ES"
+      },
+      {
+        "name": "Grevenmacher",
+        "shortCode": "GR"
+      },
+      {
+        "name": "Luxembourg",
+        "shortCode": "LU"
+      },
+      {
+        "name": "Mersch",
+        "shortCode": "ME"
+      },
+      {
+        "name": "Redange",
+        "shortCode": "RD"
+      },
+      {
+        "name": "Remich",
+        "shortCode": "RM"
+      },
+      {
+        "name": "Vianden",
+        "shortCode": "VD"
+      },
+      {
+        "name": "Wiltz",
+        "shortCode": "WI"
+      }
+    ]
+  },
+  {
+    "countryName": "Malta",
+    "countryShortCode": "MT",
+    "regions": [
+      {
+        "name": "Attard",
+        "shortCode": "01"
+      },
+      {
+        "name": "Balzan",
+        "shortCode": "02"
+      },
+      {
+        "name": "Birgu",
+        "shortCode": "03"
+      },
+      {
+        "name": "Birkirkara",
+        "shortCode": "04"
+      },
+      {
+        "name": "Birżebbuġa",
+        "shortCode": "05"
+      },
+      {
+        "name": "Bormla",
+        "shortCode": "06"
+      },
+      {
+        "name": "Dingli",
+        "shortCode": "07"
+      },
+      {
+        "name": "Fgura",
+        "shortCode": "08"
+      },
+      {
+        "name": "Floriana",
+        "shortCode": "09"
+      },
+      {
+        "name": "Fontana",
+        "shortCode": "10"
+      },
+      {
+        "name": "Guda",
+        "shortCode": "11"
+      },
+      {
+        "name": "Gżira",
+        "shortCode": "12"
+      },
+      {
+        "name": "Għajnsielem",
+        "shortCode": "13"
+      },
+      {
+        "name": "Għarb",
+        "shortCode": "14"
+      },
+      {
+        "name": "Għargħur",
+        "shortCode": "15"
+      },
+      {
+        "name": "Għasri",
+        "shortCode": "16"
+      },
+      {
+        "name": "Għaxaq",
+        "shortCode": "17"
+      },
+      {
+        "name": "Ħamrun",
+        "shortCode": "18"
+      },
+      {
+        "name": "Iklin",
+        "shortCode": "19"
+      },
+      {
+        "name": "Isla",
+        "shortCode": "20"
+      },
+      {
+        "name": "Kalkara",
+        "shortCode": "21"
+      },
+      {
+        "name": "Kerċem",
+        "shortCode": "22"
+      },
+      {
+        "name": "Kirkop",
+        "shortCode": "23"
+      },
+      {
+        "name": "Lija",
+        "shortCode": "24"
+      },
+      {
+        "name": "Luqa",
+        "shortCode": "25"
+      },
+      {
+        "name": "Marsa",
+        "shortCode": "26"
+      },
+      {
+        "name": "Marsaskala",
+        "shortCode": "27"
+      },
+      {
+        "name": "Marsaxlokk",
+        "shortCode": "28"
+      },
+      {
+        "name": "Mdina",
+        "shortCode": "29"
+      },
+      {
+        "name": "Mellieħa",
+        "shortCode": "30"
+      },
+      {
+        "name": "Mġarr",
+        "shortCode": "31"
+      },
+      {
+        "name": "Mosta",
+        "shortCode": "32"
+      },
+      {
+        "name": "Mqabba",
+        "shortCode": "33"
+      },
+      {
+        "name": "Msida",
+        "shortCode": "34"
+      },
+      {
+        "name": "Mtarfa",
+        "shortCode": "35"
+      },
+      {
+        "name": "Munxar",
+        "shortCode": "36"
+      },
+      {
+        "name": "Nadur",
+        "shortCode": "37"
+      },
+      {
+        "name": "Naxxar",
+        "shortCode": "38"
+      },
+      {
+        "name": "Paola",
+        "shortCode": "39"
+      },
+      {
+        "name": "Pembroke",
+        "shortCode": "40"
+      },
+      {
+        "name": "Pietà",
+        "shortCode": "41"
+      },
+      {
+        "name": "Qala",
+        "shortCode": "42"
+      },
+      {
+        "name": "Qormi",
+        "shortCode": "43"
+      },
+      {
+        "name": "Qrendi",
+        "shortCode": "44"
+      },
+      {
+        "name": "Rabat Għawdex",
+        "shortCode": "45"
+      },
+      {
+        "name": "Rabat Malta",
+        "shortCode": "46"
+      },
+      {
+        "name": "Safi",
+        "shortCode": "47"
+      },
+      {
+        "name": "San Ġiljan",
+        "shortCode": "48"
+      },
+      {
+        "name": "San Ġwann",
+        "shortCode": "49"
+      },
+      {
+        "name": "San Lawrenz",
+        "shortCode": "50"
+      },
+      {
+        "name": "San Pawl il-Baħar",
+        "shortCode": "51"
+      },
+      {
+        "name": "Sannat",
+        "shortCode": "52"
+      },
+      {
+        "name": "Santa Luċija",
+        "shortCode": "53"
+      },
+      {
+        "name": "Santa Venera",
+        "shortCode": "54"
+      },
+      {
+        "name": "Siġġiewi",
+        "shortCode": "55"
+      },
+      {
+        "name": "Sliema",
+        "shortCode": "56"
+      },
+      {
+        "name": "Swieqi",
+        "shortCode": "57"
+      },
+      {
+        "name": "Tai Xbiex",
+        "shortCode": "58"
+      },
+      {
+        "name": "Tarzien",
+        "shortCode": "59"
+      },
+      {
+        "name": "Valletta",
+        "shortCode": "60"
+      },
+      {
+        "name": "Xagħra",
+        "shortCode": "61"
+      },
+      {
+        "name": "Xewkija",
+        "shortCode": "62"
+      },
+      {
+        "name": "Xgħajra",
+        "shortCode": "63"
+      },
+      {
+        "name": "Żabbar",
+        "shortCode": "64"
+      },
+      {
+        "name": "Żebbuġ Għawde",
+        "shortCode": "65"
+      },
+      {
+        "name": "Żebbuġ Malta",
+        "shortCode": "66"
+      },
+      {
+        "name": "Żejtun",
+        "shortCode": "67"
+      },
+      {
+        "name": "Żurrieq",
+        "shortCode": "68"
+      }
+    ]
+  },
+  {
+    "countryName": "Netherlands",
+    "countryShortCode": "NL",
+    "regions": [
+      {
+        "name": "Drenthe",
+        "shortCode": "DR"
+      },
+      {
+        "name": "Flevoland",
+        "shortCode": "FL"
+      },
+      {
+        "name": "Friesland",
+        "shortCode": "FR"
+      },
+      {
+        "name": "Gelderland",
+        "shortCode": "GE"
+      },
+      {
+        "name": "Groningen",
+        "shortCode": "GR"
+      },
+      {
+        "name": "Limburg",
+        "shortCode": "LI"
+      },
+      {
+        "name": "Noord-Brabant",
+        "shortCode": "NB"
+      },
+      {
+        "name": "Noord-Holland",
+        "shortCode": "NH"
+      },
+      {
+        "name": "Overijssel",
+        "shortCode": "OV"
+      },
+      {
+        "name": "Utrecht",
+        "shortCode": "UT"
+      },
+      {
+        "name": "Zeeland",
+        "shortCode": "ZE"
+      },
+      {
+        "name": "Zuid-Holland",
+        "shortCode": "ZH"
+      }
+    ]
+  },
+  {
+    "countryName": "Portugal",
+    "countryShortCode": "PT",
+    "regions": [
+      {
+        "name": "Açores",
+        "shortCode": "20"
+      },
+      {
+        "name": "Aveiro",
+        "shortCode": "01"
+      },
+      {
+        "name": "Beja",
+        "shortCode": "02"
+      },
+      {
+        "name": "Braga",
+        "shortCode": "03"
+      },
+      {
+        "name": "Bragança",
+        "shortCode": "04"
+      },
+      {
+        "name": "Castelo Branco",
+        "shortCode": "05"
+      },
+      {
+        "name": "Coimbra",
+        "shortCode": "06"
+      },
+      {
+        "name": "Évora",
+        "shortCode": "07"
+      },
+      {
+        "name": "Faro",
+        "shortCode": "08"
+      },
+      {
+        "name": "Guarda",
+        "shortCode": "09"
+      },
+      {
+        "name": "Leiria",
+        "shortCode": "10"
+      },
+      {
+        "name": "Lisboa",
+        "shortCode": "11"
+      },
+      {
+        "name": "Madeira",
+        "shortCode": "30"
+      },
+      {
+        "name": "Portalegre",
+        "shortCode": "12"
+      },
+      {
+        "name": "Porto",
+        "shortCode": "13"
+      },
+      {
+        "name": "Santarém",
+        "shortCode": "14"
+      },
+      {
+        "name": "Setúbal",
+        "shortCode": "15"
+      },
+      {
+        "name": "Viana do Castelo",
+        "shortCode": "16"
+      },
+      {
+        "name": "Vila Real",
+        "shortCode": "17"
+      },
+      {
+        "name": "Viseu",
+        "shortCode": "18"
+      }
+    ]
+  },
+  {
+    "countryName": "Romania",
+    "countryShortCode": "RO",
+    "regions": [
+      {
+        "name": "Alba",
+        "shortCode": "AB"
+      },
+      {
+        "name": "Arad",
+        "shortCode": "AR"
+      },
+      {
+        "name": "Arges",
+        "shortCode": "AG"
+      },
+      {
+        "name": "Bacau",
+        "shortCode": "BC"
+      },
+      {
+        "name": "Bihor",
+        "shortCode": "BH"
+      },
+      {
+        "name": "Bistrita-Nasaud",
+        "shortCode": "BN"
+      },
+      {
+        "name": "Botosani",
+        "shortCode": "BT"
+      },
+      {
+        "name": "Braila",
+        "shortCode": "BR"
+      },
+      {
+        "name": "Brasov",
+        "shortCode": "BV"
+      },
+      {
+        "name": "Bucuresti",
+        "shortCode": "B"
+      },
+      {
+        "name": "Buzau",
+        "shortCode": "BZ"
+      },
+      {
+        "name": "Calarasi",
+        "shortCode": "CL"
+      },
+      {
+        "name": "Caras-Severin",
+        "shortCode": "CS"
+      },
+      {
+        "name": "Cluj",
+        "shortCode": "CJ"
+      },
+      {
+        "name": "Constanta",
+        "shortCode": "CT"
+      },
+      {
+        "name": "Covasna",
+        "shortCode": "CV"
+      },
+      {
+        "name": "Dambovita",
+        "shortCode": "DB"
+      },
+      {
+        "name": "Dolj",
+        "shortCode": "DJ"
+      },
+      {
+        "name": "Galati",
+        "shortCode": "GL"
+      },
+      {
+        "name": "Giurgiu",
+        "shortCode": "GR"
+      },
+      {
+        "name": "Gorj",
+        "shortCode": "GJ"
+      },
+      {
+        "name": "Harghita",
+        "shortCode": "HR"
+      },
+      {
+        "name": "Hunedoara",
+        "shortCode": "HD"
+      },
+      {
+        "name": "Ialomita",
+        "shortCode": "IL"
+      },
+      {
+        "name": "Iasi",
+        "shortCode": "IS"
+      },
+      {
+        "name": "Maramures",
+        "shortCode": "MM"
+      },
+      {
+        "name": "Mehedinti",
+        "shortCode": "MH"
+      },
+      {
+        "name": "Mures",
+        "shortCode": "MS"
+      },
+      {
+        "name": "Neamt",
+        "shortCode": "NT"
+      },
+      {
+        "name": "Olt",
+        "shortCode": "OT"
+      },
+      {
+        "name": "Prahova",
+        "shortCode": "PH"
+      },
+      {
+        "name": "Salaj",
+        "shortCode": "SJ"
+      },
+      {
+        "name": "Satu Mare",
+        "shortCode": "SM"
+      },
+      {
+        "name": "Sibiu",
+        "shortCode": "SB"
+      },
+      {
+        "name": "Suceava",
+        "shortCode": "SV"
+      },
+      {
+        "name": "Teleorman",
+        "shortCode": "TR"
+      },
+      {
+        "name": "Timis",
+        "shortCode": "TM"
+      },
+      {
+        "name": "Tulcea",
+        "shortCode": "TL"
+      },
+      {
+        "name": "Valcea",
+        "shortCode": "VL"
+      },
+      {
+        "name": "Vaslui",
+        "shortCode": "VS"
+      },
+      {
+        "name": "Vrancea",
+        "shortCode": "VN"
+      }
+    ]
+  },
+  {
+    "countryName": "Slovakia",
+    "countryShortCode": "SK",
+    "regions": [
+      {
+        "name": "Banskobystricky",
+        "shortCode": "BC"
+      },
+      {
+        "name": "Bratislavsky",
+        "shortCode": "BL"
+      },
+      {
+        "name": "Kosicky",
+        "shortCode": "KI"
+      },
+      {
+        "name": "Nitriansky",
+        "shortCode": "NI"
+      },
+      {
+        "name": "Presovsky",
+        "shortCode": "PV"
+      },
+      {
+        "name": "Trenciansky",
+        "shortCode": "TC"
+      },
+      {
+        "name": "Trnavsky",
+        "shortCode": "TA"
+      },
+      {
+        "name": "Zilinsky",
+        "shortCode": "ZI"
+      }
+    ]
+  },
+  {
+    "countryName": "Slovenia",
+    "countryShortCode": "SI",
+    "regions": [
+      {
+        "name": "Ajdovscina",
+        "shortCode": "001"
+      },
+      {
+        "name": "Apace",
+        "shortCode": "195"
+      },
+      {
+        "name": "Beltinci",
+        "shortCode": "002"
+      },
+      {
+        "name": "Benedikt",
+        "shortCode": "148"
+      },
+      {
+        "name": "Bistrica ob Sotli",
+        "shortCode": "149"
+      },
+      {
+        "name": "Bled",
+        "shortCode": "003"
+      },
+      {
+        "name": "Bloke",
+        "shortCode": "150"
+      },
+      {
+        "name": "Bohinj",
+        "shortCode": "004"
+      },
+      {
+        "name": "Borovnica",
+        "shortCode": "005"
+      },
+      {
+        "name": "Bovec",
+        "shortCode": "006"
+      },
+      {
+        "name": "Braslovce",
+        "shortCode": "151"
+      },
+      {
+        "name": "Brda",
+        "shortCode": "007"
+      },
+      {
+        "name": "Brezice",
+        "shortCode": "009"
+      },
+      {
+        "name": "Brezovica",
+        "shortCode": "008"
+      },
+      {
+        "name": "Cankova",
+        "shortCode": "152"
+      },
+      {
+        "name": "Celje",
+        "shortCode": "011"
+      },
+      {
+        "name": "Cerklje na Gorenjskem",
+        "shortCode": "012"
+      },
+      {
+        "name": "Cerknica",
+        "shortCode": "013"
+      },
+      {
+        "name": "Cerkno",
+        "shortCode": "014"
+      },
+      {
+        "name": "Cerkvenjak",
+        "shortCode": "153"
+      },
+      {
+        "name": "Cirkulane",
+        "shortCode": "196"
+      },
+      {
+        "name": "Crensovci",
+        "shortCode": "015"
+      },
+      {
+        "name": "Crna na Koroskem",
+        "shortCode": "016"
+      },
+      {
+        "name": "Crnomelj",
+        "shortCode": "017"
+      },
+      {
+        "name": "Destrnik",
+        "shortCode": "018"
+      },
+      {
+        "name": "Divaca",
+        "shortCode": "019"
+      },
+      {
+        "name": "Dobje",
+        "shortCode": "154"
+      },
+      {
+        "name": "Dobrepolje",
+        "shortCode": "020"
+      },
+      {
+        "name": "Dobrna",
+        "shortCode": "155"
+      },
+      {
+        "name": "Dobrova-Polhov Gradec",
+        "shortCode": "021"
+      },
+      {
+        "name": "Dobrovnik",
+        "shortCode": "156"
+      },
+      {
+        "name": "Dol pri Ljubljani",
+        "shortCode": "022"
+      },
+      {
+        "name": "Dolenjske Toplice",
+        "shortCode": "157"
+      },
+      {
+        "name": "Domzale",
+        "shortCode": "023"
+      },
+      {
+        "name": "Dornava",
+        "shortCode": "024"
+      },
+      {
+        "name": "Dravograd",
+        "shortCode": "025"
+      },
+      {
+        "name": "Duplek",
+        "shortCode": "026"
+      },
+      {
+        "name": "Gorenja Vas-Poljane",
+        "shortCode": "027"
+      },
+      {
+        "name": "Gorisnica",
+        "shortCode": "028"
+      },
+      {
+        "name": "Gorje",
+        "shortCode": "207"
+      },
+      {
+        "name": "Gornja Radgona",
+        "shortCode": "029"
+      },
+      {
+        "name": "Gornji Grad",
+        "shortCode": "030"
+      },
+      {
+        "name": "Gornji Petrovci",
+        "shortCode": "031"
+      },
+      {
+        "name": "Grad",
+        "shortCode": "158"
+      },
+      {
+        "name": "Grosuplje",
+        "shortCode": "032"
+      },
+      {
+        "name": "Hajdina",
+        "shortCode": "159"
+      },
+      {
+        "name": "Hoce-Slivnica",
+        "shortCode": "160"
+      },
+      {
+        "name": "Hodos",
+        "shortCode": "161"
+      },
+      {
+        "name": "Horjul",
+        "shortCode": "162"
+      },
+      {
+        "name": "Hrastnik",
+        "shortCode": "034"
+      },
+      {
+        "name": "Hrpelje-Kozina",
+        "shortCode": "035"
+      },
+      {
+        "name": "Idrija",
+        "shortCode": "036"
+      },
+      {
+        "name": "Ig",
+        "shortCode": "037"
+      },
+      {
+        "name": "Ilirska Bistrica",
+        "shortCode": "038"
+      },
+      {
+        "name": "Ivancna Gorica",
+        "shortCode": "039"
+      },
+      {
+        "name": "Izola",
+        "shortCode": "040"
+      },
+      {
+        "name": "Jesenice",
+        "shortCode": "041"
+      },
+      {
+        "name": "Jursinci",
+        "shortCode": "042"
+      },
+      {
+        "name": "Kamnik",
+        "shortCode": "043"
+      },
+      {
+        "name": "Kanal",
+        "shortCode": "044"
+      },
+      {
+        "name": "Kidricevo",
+        "shortCode": "045"
+      },
+      {
+        "name": "Kobarid",
+        "shortCode": "046"
+      },
+      {
+        "name": "Kobilje",
+        "shortCode": "047"
+      },
+      {
+        "name": "Kocevje",
+        "shortCode": "048"
+      },
+      {
+        "name": "Komen",
+        "shortCode": "049"
+      },
+      {
+        "name": "Komenda",
+        "shortCode": "164"
+      },
+      {
+        "name": "Koper",
+        "shortCode": "050"
+      },
+      {
+        "name": "Kodanjevica na Krki",
+        "shortCode": "197"
+      },
+      {
+        "name": "Kostel",
+        "shortCode": "165"
+      },
+      {
+        "name": "Kozje",
+        "shortCode": "051"
+      },
+      {
+        "name": "Kranj",
+        "shortCode": "052"
+      },
+      {
+        "name": "Kranjska Gora",
+        "shortCode": "053"
+      },
+      {
+        "name": "Krizevci",
+        "shortCode": "166"
+      },
+      {
+        "name": "Krsko",
+        "shortCode": "054"
+      },
+      {
+        "name": "Kungota",
+        "shortCode": "055"
+      },
+      {
+        "name": "Kuzma",
+        "shortCode": "056"
+      },
+      {
+        "name": "Lasko",
+        "shortCode": "057"
+      },
+      {
+        "name": "Lenart",
+        "shortCode": "058"
+      },
+      {
+        "name": "Lendava",
+        "shortCode": "059"
+      },
+      {
+        "name": "Litija",
+        "shortCode": "060"
+      },
+      {
+        "name": "Ljubljana",
+        "shortCode": "061"
+      },
+      {
+        "name": "Ljubno",
+        "shortCode": "062"
+      },
+      {
+        "name": "Ljutomer",
+        "shortCode": "063"
+      },
+      {
+        "name": "Log-Dragomer",
+        "shortCode": "208"
+      },
+      {
+        "name": "Logatec",
+        "shortCode": "064"
+      },
+      {
+        "name": "Loska Dolina",
+        "shortCode": "065"
+      },
+      {
+        "name": "Loski Potok",
+        "shortCode": "066"
+      },
+      {
+        "name": "Lovrenc na Pohorju",
+        "shortCode": "167"
+      },
+      {
+        "name": "Lukovica",
+        "shortCode": "068"
+      },
+      {
+        "name": "Luce",
+        "shortCode": "067"
+      },
+      {
+        "name": "Majsperk",
+        "shortCode": "069"
+      },
+      {
+        "name": "Makole",
+        "shortCode": "198"
+      },
+      {
+        "name": "Maribor",
+        "shortCode": "070"
+      },
+      {
+        "name": "Markovci",
+        "shortCode": "168"
+      },
+      {
+        "name": "Medvode",
+        "shortCode": "071"
+      },
+      {
+        "name": "Menges",
+        "shortCode": "072"
+      },
+      {
+        "name": "Metlika",
+        "shortCode": "073"
+      },
+      {
+        "name": "Mezica",
+        "shortCode": "074"
+      },
+      {
+        "name": "Miklavz na Dravskem Polju",
+        "shortCode": "169"
+      },
+      {
+        "name": "Miren-Kostanjevica",
+        "shortCode": "075"
+      },
+      {
+        "name": "Mirna",
+        "shortCode": "212"
+      },
+      {
+        "name": "Mirna Pec",
+        "shortCode": "170"
+      },
+      {
+        "name": "Mislinja",
+        "shortCode": "076"
+      },
+      {
+        "name": "Mokronog-Trebelno",
+        "shortCode": "199"
+      },
+      {
+        "name": "Moravce",
+        "shortCode": "077"
+      },
+      {
+        "name": "Moravske Toplice",
+        "shortCode": "078"
+      },
+      {
+        "name": "Mozirje",
+        "shortCode": "079"
+      },
+      {
+        "name": "Murska Sobota",
+        "shortCode": "080"
+      },
+      {
+        "name": "Naklo",
+        "shortCode": "082"
+      },
+      {
+        "name": "Nazarje",
+        "shortCode": "083"
+      },
+      {
+        "name": "Nova Gorica",
+        "shortCode": "084"
+      },
+      {
+        "name": "Novo Mesto",
+        "shortCode": "085"
+      },
+      {
+        "name": "Odranci",
+        "shortCode": "086"
+      },
+      {
+        "name": "Ormoz",
+        "shortCode": "087"
+      },
+      {
+        "name": "Osilnica",
+        "shortCode": "088"
+      },
+      {
+        "name": "Pesnica",
+        "shortCode": "089"
+      },
+      {
+        "name": "Piran",
+        "shortCode": "090"
+      },
+      {
+        "name": "Pivka",
+        "shortCode": "091"
+      },
+      {
+        "name": "Podcetrtek",
+        "shortCode": "092"
+      },
+      {
+        "name": "Podlehnik",
+        "shortCode": "172"
+      },
+      {
+        "name": "Podvelka",
+        "shortCode": "093"
+      },
+      {
+        "name": "Poljcane",
+        "shortCode": "200"
+      },
+      {
+        "name": "Postojna",
+        "shortCode": "094"
+      },
+      {
+        "name": "Prebold",
+        "shortCode": "174"
+      },
+      {
+        "name": "Preddvor",
+        "shortCode": "095"
+      },
+      {
+        "name": "Prevalje",
+        "shortCode": "175"
+      },
+      {
+        "name": "Ptuj",
+        "shortCode": "096"
+      },
+      {
+        "name": "Race-Fram",
+        "shortCode": "098"
+      },
+      {
+        "name": "Radece",
+        "shortCode": "099"
+      },
+      {
+        "name": "Radenci",
+        "shortCode": "100"
+      },
+      {
+        "name": "Radlje ob Dravi",
+        "shortCode": "101"
+      },
+      {
+        "name": "Radovljica",
+        "shortCode": "102"
+      },
+      {
+        "name": "Ravne na Koroskem",
+        "shortCode": "103"
+      },
+      {
+        "name": "Razkrizje",
+        "shortCode": "176"
+      },
+      {
+        "name": "Recica ob Savinji",
+        "shortCode": "209"
+      },
+      {
+        "name": "Rence-Vogrsko",
+        "shortCode": "201"
+      },
+      {
+        "name": "Ribnica",
+        "shortCode": "104"
+      },
+      {
+        "name": "Ribnica na Poboriu",
+        "shortCode": "177"
+      },
+      {
+        "name": "Rogaska Slatina",
+        "shortCode": "106"
+      },
+      {
+        "name": "Rogasovci",
+        "shortCode": "105"
+      },
+      {
+        "name": "Rogatec",
+        "shortCode": "107"
+      },
+      {
+        "name": "Ruse",
+        "shortCode": "108"
+      },
+      {
+        "name": "Salovci",
+        "shortCode": "033"
+      },
+      {
+        "name": "Selnica ob Dravi",
+        "shortCode": "178"
+      },
+      {
+        "name": "Semic",
+        "shortCode": "109"
+      },
+      {
+        "name": "Sempeter-Vrtojba",
+        "shortCode": "183"
+      },
+      {
+        "name": "Sencur",
+        "shortCode": "117"
+      },
+      {
+        "name": "Sentilj",
+        "shortCode": "118"
+      },
+      {
+        "name": "Sentjernej",
+        "shortCode": "119"
+      },
+      {
+        "name": "Sentjur",
+        "shortCode": "120"
+      },
+      {
+        "name": "Sentrupert",
+        "shortCode": "211"
+      },
+      {
+        "name": "Sevnica",
+        "shortCode": "110"
+      },
+      {
+        "name": "Sezana",
+        "shortCode": "111"
+      },
+      {
+        "name": "Skocjan",
+        "shortCode": "121"
+      },
+      {
+        "name": "Skofja Loka",
+        "shortCode": "122"
+      },
+      {
+        "name": "Skofljica",
+        "shortCode": "123"
+      },
+      {
+        "name": "Slovenj Gradec",
+        "shortCode": "112"
+      },
+      {
+        "name": "Slovenska Bistrica",
+        "shortCode": "113"
+      },
+      {
+        "name": "Slovenske Konjice",
+        "shortCode": "114"
+      },
+      {
+        "name": "Smarje pri elsah",
+        "shortCode": "124"
+      },
+      {
+        "name": "Smarjeske Toplice",
+        "shortCode": "206"
+      },
+      {
+        "name": "Smartno ob Paki",
+        "shortCode": "125"
+      },
+      {
+        "name": "Smartno pri Litiji",
+        "shortCode": "194"
+      },
+      {
+        "name": "Sodrazica",
+        "shortCode": "179"
+      },
+      {
+        "name": "Solcava",
+        "shortCode": "180"
+      },
+      {
+        "name": "Sostanj",
+        "shortCode": "126"
+      },
+      {
+        "name": "Sredisce ob Dravi",
+        "shortCode": "202"
+      },
+      {
+        "name": "Starse",
+        "shortCode": "115"
+      },
+      {
+        "name": "Store",
+        "shortCode": "127"
+      },
+      {
+        "name": "Straza",
+        "shortCode": "203"
+      },
+      {
+        "name": "Sveta Ana",
+        "shortCode": "181"
+      },
+      {
+        "name": "Sveta Trojica v Slovenskih Goricah",
+        "shortCode": "204"
+      },
+      {
+        "name": "Sveta Andraz v Slovenskih Goricah",
+        "shortCode": "182"
+      },
+      {
+        "name": "Sveti Jurij",
+        "shortCode": "116"
+      },
+      {
+        "name": "Sveti Jurij v Slovenskih Goricah",
+        "shortCode": "210"
+      },
+      {
+        "name": "Sveti Tomaz",
+        "shortCode": "205"
+      },
+      {
+        "name": "Tabor",
+        "shortCode": "184"
+      },
+      {
+        "name": "Tisina",
+        "shortCode": "010"
+      },
+      {
+        "name": "Tolmin",
+        "shortCode": "128"
+      },
+      {
+        "name": "Trbovlje",
+        "shortCode": "129"
+      },
+      {
+        "name": "Trebnje",
+        "shortCode": "130"
+      },
+      {
+        "name": "Trnovska Vas",
+        "shortCode": "185"
+      },
+      {
+        "name": "Trzin",
+        "shortCode": "186"
+      },
+      {
+        "name": "Trzic",
+        "shortCode": "131"
+      },
+      {
+        "name": "Turnisce",
+        "shortCode": "132"
+      },
+      {
+        "name": "Velenje",
+        "shortCode": "133"
+      },
+      {
+        "name": "Velika Polana",
+        "shortCode": "187"
+      },
+      {
+        "name": "Velike Lasce",
+        "shortCode": "134"
+      },
+      {
+        "name": "Verzej",
+        "shortCode": "188"
+      },
+      {
+        "name": "Videm",
+        "shortCode": "135"
+      },
+      {
+        "name": "Vipava",
+        "shortCode": "136"
+      },
+      {
+        "name": "Vitanje",
+        "shortCode": "137"
+      },
+      {
+        "name": "Vodice",
+        "shortCode": "138"
+      },
+      {
+        "name": "Vojnik",
+        "shortCode": "139"
+      },
+      {
+        "name": "Vransko",
+        "shortCode": "189"
+      },
+      {
+        "name": "Vrhnika",
+        "shortCode": "140"
+      },
+      {
+        "name": "Vuzenica",
+        "shortCode": "141"
+      },
+      {
+        "name": "Zagorje ob Savi",
+        "shortCode": "142"
+      },
+      {
+        "name": "Zavrc",
+        "shortCode": "143"
+      },
+      {
+        "name": "Zrece",
+        "shortCode": "144"
+      },
+      {
+        "name": "Zalec",
+        "shortCode": "190"
+      },
+      {
+        "name": "Zelezniki",
+        "shortCode": "146"
+      },
+      {
+        "name": "Zetale",
+        "shortCode": "191"
+      },
+      {
+        "name": "Ziri",
+        "shortCode": "147"
+      },
+      {
+        "name": "Zirovnica",
+        "shortCode": "192"
+      },
+      {
+        "name": "Zuzemberk",
+        "shortCode": "193"
+      }
+    ]
+  },
+  {
+    "countryName": "Sweden",
+    "countryShortCode": "SE",
+    "regions": [
+      {
+        "name": "Blekinge",
+        "shortCode": "K"
+      },
+      {
+        "name": "Dalarna",
+        "shortCode": "W"
+      },
+      {
+        "name": "Gävleborg",
+        "shortCode": "X"
+      },
+      {
+        "name": "Gotland",
+        "shortCode": "I"
+      },
+      {
+        "name": "Halland",
+        "shortCode": "N"
+      },
+      {
+        "name": "Jämtland",
+        "shortCode": "Z"
+      },
+      {
+        "name": "Jönköping",
+        "shortCode": "F"
+      },
+      {
+        "name": "Kalmar",
+        "shortCode": "H"
+      },
+      {
+        "name": "Kronoberg",
+        "shortCode": "G"
+      },
+      {
+        "name": "Norrbotten",
+        "shortCode": "BD"
+      },
+      {
+        "name": "Örebro",
+        "shortCode": "T"
+      },
+      {
+        "name": "Östergötland",
+        "shortCode": "E"
+      },
+      {
+        "name": "Skåne",
+        "shortCode": "M"
+      },
+      {
+        "name": "Södermanland",
+        "shortCode": "D"
+      },
+      {
+        "name": "Stockholm",
+        "shortCode": "AB"
+      },
+      {
+        "name": "Uppsala",
+        "shortCode": "C"
+      },
+      {
+        "name": "Värmland",
+        "shortCode": "S"
+      },
+      {
+        "name": "Västerbotten",
+        "shortCode": "AC"
+      },
+      {
+        "name": "Västernorrland",
+        "shortCode": "Y"
+      },
+      {
+        "name": "Västmanland",
+        "shortCode": "U"
+      },
+      {
+        "name": "Västra Götaland",
+        "shortCode": "O"
+      }
+    ]
+  }
+]
