@@ -1,6 +1,7 @@
 package app.tently.tentlyappbackend.repos;
 
 import app.tently.tentlyappbackend.models.Spot;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -11,5 +12,7 @@ import java.util.Optional;
 public interface SpotRepo extends JpaRepository<Spot, Long> {
     Optional<Spot> findByName(String name);
 
-    List<Spot> getAllByCountryAndRegion(String country, String region);
+    List<Spot> findAllByCountryAndRegion(String country, String region, Pageable pageable);
+
+    List<Spot> findAllByCountryAndRegion(String country, String region);
 }

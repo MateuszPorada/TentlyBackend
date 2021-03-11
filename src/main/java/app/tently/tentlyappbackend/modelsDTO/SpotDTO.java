@@ -1,12 +1,10 @@
 package app.tently.tentlyappbackend.modelsDTO;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-@AllArgsConstructor
 public class SpotDTO {
     private String name;
     private String description;
@@ -22,5 +20,9 @@ public class SpotDTO {
         this.country = country;
         this.region = region;
         this.imgUrl = imgUrl;
+    }
+
+    public SpotDTO() {
+
     }
 }

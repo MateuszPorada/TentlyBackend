@@ -48,12 +48,9 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.cors();
 //        http.authorizeRequests()
 //                .antMatchers("/user/**").hasRole("ADMIN")
-//                .antMatchers("/line/add").hasRole("ADMIN")
-//                .antMatchers("/line/delete").hasRole("ADMIN")
-//                .antMatchers("/line/update").hasRole("ADMIN")
-//                .antMatchers("/engine/add").hasRole("ADMIN")
-//                .antMatchers("/engine/delete").hasRole("ADMIN")
-//                .antMatchers("/engine/edit").hasRole("ADMIN")
+//                .antMatchers("/spot/**").hasRole("ADMIN")
+//                .antMatchers("/like/**").hasRole("ADMIN")
+//                .antMatchers("/generate/**").hasRole("ADMIN")
 //                .and()
 //                .addFilter(new JwtFilter(authenticationManager()));
     }

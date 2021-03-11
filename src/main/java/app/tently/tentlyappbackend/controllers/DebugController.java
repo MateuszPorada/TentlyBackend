@@ -39,7 +39,6 @@ public class DebugController {
     @GetMapping(value = "generate/spots")
     public void generateSpots() throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new FileReader("C:\\ProjektySpringBoot\\TentlyAppBackend\\src\\main\\resources\\static\\sample.json"));
-//        System.out.println(bufferedReader.read());
         Optional<User> user = userService.findUser(1L);
         CountryModel[] countryModelArray = new Gson().fromJson(bufferedReader, CountryModel[].class);
 
