@@ -17,4 +17,8 @@ public class UserDTO {
         this.country = country;
         this.region = region;
     }
+
+    public UserDTO() {
+
+    }
 }

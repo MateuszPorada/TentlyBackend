@@ -1,10 +1,10 @@
-package app.tently.tentlyappbackend;
+package app.tently.tentlyappbackend.configs;
 
+import app.tently.tentlyappbackend.services.SigKeyProvider;
 import app.tently.tentlyappbackend.services.TokenProvider;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -19,14 +19,14 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Set;
 
 public class JwtFilter extends BasicAuthenticationFilter {
 
     public TokenProvider tokenProvider;
-    @Value("${SIGNATURE.KEY}")
-    private String sigKey;
+    public SigKeyProvider sigKey;
 
     public JwtFilter(AuthenticationManager authenticationManager) {
         super(authenticationManager);
@@ -61,8 +61,12 @@ public class JwtFilter extends BasicAuthenticationFilter {
     }
 
     private UsernamePasswordAuthenticationToken getAuthenticationByToken(String header) {
-        Jws<Claims> claimsJws = Jwts.parser().setSigningKey(sigKey.getBytes())
+        System.out.println(header);
+        System.out.println("1" + sigKey);
+        System.out.println("2" + Arrays.toString(sigKey.getSigKey().getBytes()));
+        Jws<Claims> claimsJws = Jwts.parser().setSigningKey(sigKey.getSigKey().getBytes())
                 .parseClaimsJws(header);
+        System.out.println(claimsJws);
         String username = claimsJws.getBody().get("name").toString();
         String role = claimsJws.getBody().get("role").toString();
         Set<SimpleGrantedAuthority> simpleGrantedAuthorities = Collections.singleton(new SimpleGrantedAuthority(role));

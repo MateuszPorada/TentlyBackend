@@ -1,10 +1,10 @@
 package app.tently.tentlyappbackend.controllers;
 
-import app.tently.tentlyappbackend.models.ErrorMessage;
 import app.tently.tentlyappbackend.models.TokenModel;
 import app.tently.tentlyappbackend.models.User;
-import app.tently.tentlyappbackend.models.UserLoginResponse;
+import app.tently.tentlyappbackend.modelsDTO.ErrorMessageDTO;
 import app.tently.tentlyappbackend.modelsDTO.UserLoginDTO;
+import app.tently.tentlyappbackend.modelsDTO.UserLoginResponseDTO;
 import app.tently.tentlyappbackend.repos.TokenRepo;
 import app.tently.tentlyappbackend.repos.UserRepo;
 import app.tently.tentlyappbackend.services.UserService;
@@ -38,21 +38,21 @@ public class AuthenticationController {
         Optional<User> newUser = userRepo.findByEmail(userLoginDTO.getEmail());
         if (newUser.isPresent()) {
             if (bCryptPasswordEncoder.matches(userLoginDTO.getPassword(), newUser.get().getPassword())) {
-                UserLoginResponse userLoginResponse = userService.mapTOUserResponse(newUser.get());
+                UserLoginResponseDTO userLoginResponseDTO = userService.mapTOUserResponse(newUser.get());
                 return ResponseEntity
                         .status(HttpStatus.OK)
-                        .body(userLoginResponse);
+                        .body(userLoginResponseDTO);
             }
             {
                 return ResponseEntity
                         .status(HttpStatus.UNAUTHORIZED)
-                        .body(new ErrorMessage("Wrong password")
+                        .body(new ErrorMessageDTO("Wrong password")
                         );
             }
         } else {
             return ResponseEntity
                     .status(HttpStatus.NOT_FOUND)
-                    .body(new ErrorMessage("User nor found")
+                    .body(new ErrorMessageDTO("User nor found")
                     );
         }
     }

@@ -1,13 +1,13 @@
-package app.tently.tentlyappbackend.models;
+package app.tently.tentlyappbackend.modelsDTO;
 
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-public class CountryModel {
+public class CountryModelDTO {
     private String countryName;
     private String countryShortCode;
-    private List<RegionModel> regions;
+    private List<RegionModelDTO> regions;
 }
 

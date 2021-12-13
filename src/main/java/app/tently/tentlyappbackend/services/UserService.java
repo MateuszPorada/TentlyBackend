@@ -1,8 +1,8 @@
 package app.tently.tentlyappbackend.services;
 
 import app.tently.tentlyappbackend.models.User;
-import app.tently.tentlyappbackend.models.UserLoginResponse;
 import app.tently.tentlyappbackend.modelsDTO.UserDTO;
+import app.tently.tentlyappbackend.modelsDTO.UserLoginResponseDTO;
 import app.tently.tentlyappbackend.repos.LikeRepo;
 import app.tently.tentlyappbackend.repos.UserRepo;
 import io.jsonwebtoken.Jwts;
@@ -62,10 +62,11 @@ public class UserService {
         userRepo.save(user);
     }
 
-    public UserLoginResponse mapTOUserResponse(User user) {
+    public UserLoginResponseDTO mapTOUserResponse(User user) {
+        System.out.println(sigKey);
         long currentTime = System.currentTimeMillis();
         List<Object> likes = likeRepo.findLikeByUserID(user.getId());
-        return new UserLoginResponse(user, Jwts.builder()
+        return new UserLoginResponseDTO(user, Jwts.builder()
                 .setHeaderParam("typ", "JWT")
                 .claim("name", user.getEmail())
                 .claim("role", "ROLE_" + user.getRole())

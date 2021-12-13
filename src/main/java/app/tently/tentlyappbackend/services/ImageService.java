@@ -1,7 +1,7 @@
 package app.tently.tentlyappbackend.services;
 
 import app.tently.tentlyappbackend.models.ImageModel;
-import app.tently.tentlyappbackend.models.ImageResponseModel;
+import app.tently.tentlyappbackend.modelsDTO.ImageResponseModelDTO;
 import app.tently.tentlyappbackend.repos.ImageRepo;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
@@ -30,6 +30,9 @@ public class ImageService {
         this.modelMapper = modelMapper;
     }
 
+    public String save(MultipartFile image) throws IOException {
+        return MapImageModel(image);
+    }
 
     public List<String> save(MultipartFile[] images) throws IOException {
         List<String> stringList = new ArrayList<>();
@@ -72,18 +75,18 @@ public class ImageService {
         return imageRepo.findAll();
     }
 
-    public List<ImageResponseModel> getList() {
+    public List<ImageResponseModelDTO> getList() {
         List<ImageModel> imageModels = imageRepo.findAll();
-        List<ImageResponseModel> imageResponseModels = new ArrayList<>();
+        List<ImageResponseModelDTO> imageResponseModelDTOS = new ArrayList<>();
         for (ImageModel imageModel : imageModels) {
-            ImageResponseModel imageResponseModel = modelMapper.map(imageModel, ImageResponseModel.class);
+            ImageResponseModelDTO imageResponseModelDTO = modelMapper.map(imageModel, ImageResponseModelDTO.class);
             String url = ServletUriComponentsBuilder.fromCurrentContextPath()
                     .path("/image/")
                     .path(imageModel.getId())
                     .toUriString();
-            imageResponseModel.setImageUrl(url);
-            imageResponseModels.add(imageResponseModel);
+            imageResponseModelDTO.setImageUrl(url);
+            imageResponseModelDTOS.add(imageResponseModelDTO);
         }
-        return imageResponseModels;
+        return imageResponseModelDTOS;
     }
 }

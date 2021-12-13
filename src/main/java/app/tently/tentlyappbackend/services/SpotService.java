@@ -1,8 +1,8 @@
 package app.tently.tentlyappbackend.services;
 
 import app.tently.tentlyappbackend.models.Spot;
-import app.tently.tentlyappbackend.models.SpotResponse;
 import app.tently.tentlyappbackend.modelsDTO.SpotDTO;
+import app.tently.tentlyappbackend.modelsDTO.SpotResponseDTO;
 import app.tently.tentlyappbackend.repos.SpotRepo;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Pageable;
@@ -53,25 +53,25 @@ public class SpotService {
         return spotRepo.findById(spot_id);
     }
 
-    public List<SpotResponse> getPopularByCountryAndRegion(String country, String region, int size) {
+    public List<SpotResponseDTO> getPopularByCountryAndRegion(String country, String region, int size) {
         List<Spot> spotList = spotRepo.findAllByCountryAndRegion(country, region);
         spotList.sort((o1, o2) -> o2.getLikeList().size() - o1.getLikeList().size());
         return mapSpotsList(spotList, size);
     }
 
-    public List<SpotResponse> getByCountryAndRegion(String country, String region, Pageable pageable) {
+    public List<SpotResponseDTO> getByCountryAndRegion(String country, String region, Pageable pageable) {
         List<Spot> spotList = spotRepo.findAllByCountryAndRegion(country, region, pageable);
         return mapSpotsList(spotList, pageable.getPageSize());
     }
 
-    private List<SpotResponse> mapSpotsList(List<Spot> spotList, int size) {
+    private List<SpotResponseDTO> mapSpotsList(List<Spot> spotList, int size) {
         if (size < spotList.size()) {
             spotList.subList(size, spotList.size()).clear();
         }
-        List<SpotResponse> spotResponseList = new ArrayList<>();
+        List<SpotResponseDTO> spotResponseDTOList = new ArrayList<>();
         for (Spot spot : spotList) {
-            spotResponseList.add(new SpotResponse(spot));
+            spotResponseDTOList.add(new SpotResponseDTO(spot));
         }
-        return spotResponseList;
+        return spotResponseDTOList;
     }
 }

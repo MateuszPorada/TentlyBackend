@@ -1,9 +1,9 @@
 package app.tently.tentlyappbackend.controllers;
 
 import app.tently.tentlyappbackend.models.Spot;
-import app.tently.tentlyappbackend.models.SpotResponse;
 import app.tently.tentlyappbackend.models.User;
 import app.tently.tentlyappbackend.modelsDTO.SpotDTO;
+import app.tently.tentlyappbackend.modelsDTO.SpotResponseDTO;
 import app.tently.tentlyappbackend.services.SpotService;
 import app.tently.tentlyappbackend.services.UserService;
 import org.springframework.data.domain.PageRequest;
@@ -46,7 +46,7 @@ public class SpotController {
 
     @GetMapping(value = "spot/popular/{country}/{region}/{size}")
     public ResponseEntity<Object> getPopular(@PathVariable String country, @PathVariable String region, @PathVariable int size) {
-        List<SpotResponse> spotList = spotService.getPopularByCountryAndRegion(country, region, size);
+        List<SpotResponseDTO> spotList = spotService.getPopularByCountryAndRegion(country, region, size);
         if (!spotList.isEmpty())
             return new ResponseEntity<>(spotList, HttpStatus.OK);
         else
@@ -56,7 +56,7 @@ public class SpotController {
     @GetMapping(value = "spot/{country}/{region}/{page}/{size}")
     public ResponseEntity<Object> getSpots(@PathVariable String country, @PathVariable String region, @PathVariable int page, @PathVariable int size) {
         Pageable pageable = PageRequest.of(page, size);
-        List<SpotResponse> spotList = spotService.getByCountryAndRegion(country, region, pageable);
+        List<SpotResponseDTO> spotList = spotService.getByCountryAndRegion(country, region, pageable);
         if (!spotList.isEmpty())
             return new ResponseEntity<>(spotList, HttpStatus.OK);
         else
@@ -76,6 +76,7 @@ public class SpotController {
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }
     }
+
 
     @PutMapping(value = "spot/{id}")
     public ResponseEntity<Object> updateSpot(@RequestBody SpotDTO spotDTO, @PathVariable Long id) {
